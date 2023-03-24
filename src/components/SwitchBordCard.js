@@ -1,21 +1,24 @@
 import React from "react";
-import ReactEcharts from "echarts-for-react";
+// import ReactEcharts from "echarts-for-react";
 import { connect } from "react-redux";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 
-import { onPressSwitchBordButton, onPressSwitchBordDropDown } from "../actions";
+import { onPressSwitchBordButton, 
+  // onPressSwitchBordDropDown
+ } from "../actions";
 import { Dropdown } from "react-bootstrap";
+import { Button } from "antd";
 
 class SwitchBordCard extends React.Component {
   render() {
     const {
-      Icon,
+     // Icon,
       Buttons,
       OnPressSwitch,
       IsSwitch,
-      onPressDropDown,
-      isDropdownShow,
-      disabledDropDown,
+     // onPressDropDown,
+     // isDropdownShow,
+     // disabledDropDown,
       onPressAllOnLight,
       onPressAllOffLight,
     } = this.props;
@@ -31,10 +34,10 @@ class SwitchBordCard extends React.Component {
                   className="dropdown-menu dropdown-menu-right"
                 >
                   <li>
-                    <a onClick={onPressAllOnLight}>All On</a>
+                    <Button type="link" onClick={onPressAllOnLight}>All On</Button>
                   </li>
                   <li>
-                    <a onClick={onPressAllOffLight}>All Off</a>
+                    <Button type="link" onClick={onPressAllOffLight}>All Off</Button>
                   </li>
                 </Dropdown.Menu>
               </Dropdown.Toggle>
@@ -54,7 +57,7 @@ class SwitchBordCard extends React.Component {
                       }
                     >
                       {Button.title}
-                      <a onClick={() => OnPressSwitch(index)}>
+                      <Button  type="link"  onClick={() => OnPressSwitch(index)}>
                         <span
                           className={
                             IsSwitch[index] === true && !Button.NotConnected
@@ -73,7 +76,7 @@ class SwitchBordCard extends React.Component {
                         >
                           On
                         </span>
-                      </a>
+                      </Button>
                       <span
                         className={
                           Button.NotConnected

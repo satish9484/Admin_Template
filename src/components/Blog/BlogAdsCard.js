@@ -1,11 +1,12 @@
 import React from "react";
 import { connect } from "react-redux";
+import { Link } from "react-router-dom";
 
 class BlogAdsCard extends React.Component {
   render() {
     const {
       HeaderText,
-      Details,
+      //Details,
       RefLink,
       PostList,
       ImageList,
@@ -28,14 +29,14 @@ class BlogAdsCard extends React.Component {
                 ? RefLink.map((data, i) => {
                     return (
                       <li key={"fihgi" + i}>
-                        <a
+                        <Link
                           href="#!"
                           onClick={(e) => {
                             e.preventDefault();
                           }}
                         >
                           {data.name}
-                        </a>
+                        </Link>
                       </li>
                     );
                   })
@@ -53,7 +54,7 @@ class BlogAdsCard extends React.Component {
                       <p className="m-b-0">{data.Ads}</p>
                       <span>{data.Date}</span>
                       <div className="img-post">
-                        <img alt="Awesome Image" src={data.ImageUrl} />
+                        <img alt="Awesome" src={data.ImageUrl}  />
                       </div>
                     </div>
                   );
@@ -68,9 +69,9 @@ class BlogAdsCard extends React.Component {
               {ImageList.map((data, i) => {
                 return (
                   <li key={"imagesdd" + i}>
-                    <a>
-                      <img src={data.ImageUrl} alt="image description" />
-                    </a>
+                    <Link>
+                      <img src={data.ImageUrl} alt="description" />
+                    </Link>
                   </li>
                 );
               })}

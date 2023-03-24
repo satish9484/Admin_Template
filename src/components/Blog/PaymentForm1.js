@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import mastercard from "../../assets/images/ecommerce/mastercard.png";
 import visacard from "../../assets/images/ecommerce/visa-card.png";
 import paypal from "../../assets/images/ecommerce/paypal.png";
+import { Link } from "react-router-dom";
 
 class PaymentForm1 extends React.Component {
   render() {
@@ -16,9 +17,9 @@ class PaymentForm1 extends React.Component {
           <div className="body">
             {name === "Payment form1" ? (
               <p>
-                <img className="m-r-5" src={mastercard} />
-                <img className="m-r-5" src={visacard} />
-                <img src={paypal} />
+                <img className="m-r-5" src={mastercard} alt="" />
+                <img className="m-r-5" src={visacard} alt=" "  />
+                <img src={paypal} alt=""  />
               </p>
             ) : (
               <ul
@@ -26,7 +27,7 @@ class PaymentForm1 extends React.Component {
                 className="nav nav-pills justify-content-start mb-2"
               >
                 <li className="nav-item">
-                  <a
+                  <Link
                     className="nav-link active"
                     role="tab"
                     id="ngb-tab-0"
@@ -35,10 +36,10 @@ class PaymentForm1 extends React.Component {
                     aria-disabled="false"
                   >
                     <i className="fa fa-credit-card"></i> Credit Card
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a
+                  <Link
                     className="nav-link"
                     role="tab"
                     id="ngb-tab-1"
@@ -46,10 +47,10 @@ class PaymentForm1 extends React.Component {
                     aria-disabled="false"
                   >
                     <i className="fa fa-paypal"></i> Paypal
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a
+                  <Link
                     className="nav-link"
                     role="tab"
                     id="ngb-tab-2"
@@ -57,12 +58,12 @@ class PaymentForm1 extends React.Component {
                     aria-disabled="false"
                   >
                     <i className="fa fa-university"></i> Bank Transfer
-                  </a>
+                  </Link>
                 </li>
               </ul>
             )}
             <p className="alert alert-success">Some text success or error</p>
-            <form role="form">
+            <form>
               <div className="form-group">
                 <label>Full name (on the card)</label>
                 <div className="input-group">

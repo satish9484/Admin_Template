@@ -9,6 +9,8 @@ import { Dropdown } from "react-bootstrap";
 
 class MailInbox extends React.Component {
   render() {
+    const current = document.location;
+
     const { isTagDropDown, isMoreDropDown } = this.props;
     return (
       <div className="row clearfix">
@@ -16,6 +18,7 @@ class MailInbox extends React.Component {
           <div className="card">
             <div className="mobile-left">
               <a
+                href={current.href}
                 className="btn btn-primary toggle-email-nav collapsed"
                 data-toggle="collapse"
                 role="button"
@@ -32,7 +35,7 @@ class MailInbox extends React.Component {
               <div className="mail-left collapse" id="email-nav">
                 <div className="mail-compose m-b-20">
                   <a
-                    href="#!"
+                    href={current.href}
                     onClick={(e) => {
                       e.preventDefault();
                       this.props.onPressCompose(false);
@@ -45,7 +48,7 @@ class MailInbox extends React.Component {
                 <div className="mail-side">
                   <ul className="nav">
                     <li className="active">
-                      <a>
+                      <a href={current.href}>
                         <i className="icon-envelope"></i>Inbox
                         <span className="badge badge-primary float-right">
                           6
@@ -53,23 +56,23 @@ class MailInbox extends React.Component {
                       </a>
                     </li>
                     <li>
-                      <a>
+                      <a href={current.href}>
                         <i className="icon-cursor"></i>Sent
                       </a>
                     </li>
                     <li>
-                      <a>
+                      <a href={current.href}>
                         <i className="icon-envelope-open"></i>Draft
                         <span className="badge badge-info float-right">3</span>
                       </a>
                     </li>
                     <li>
-                      <a>
+                      <a href={current.href}>
                         <i className="icon-action-redo"></i>Outbox
                       </a>
                     </li>
                     <li>
-                      <a>
+                      <a href={current.href}>
                         <i className="icon-star"></i>Starred
                         <span className="badge badge-warning float-right">
                           6
@@ -77,7 +80,7 @@ class MailInbox extends React.Component {
                       </a>
                     </li>
                     <li>
-                      <a>
+                      <a href={current.href}>
                         <i className="icon-trash"></i>Trash
                         <span className="badge badge-danger float-right">
                           9
@@ -87,13 +90,17 @@ class MailInbox extends React.Component {
                   </ul>
                   <h3 className="label">
                     Labels{" "}
-                    <a className="float-right m-r-10" title="Add New Labels">
+                    <a
+                      href={current.href}
+                      className="float-right m-r-10"
+                      title="Add New Labels"
+                    >
                       <i className="icon-plus"></i>
                     </a>
                   </h3>
                   <ul className="nav">
                     <li className="active">
-                      <a>
+                      <a href={current.href}>
                         <i className="fa fa-circle text-danger"></i>Web Design
                         <span className="badge badge-primary float-right">
                           5
@@ -101,17 +108,17 @@ class MailInbox extends React.Component {
                       </a>
                     </li>
                     <li>
-                      <a>
+                      <a href={current.href}>
                         <i className="fa fa-circle text-info"></i>Recharge
                       </a>
                     </li>
                     <li>
-                      <a>
+                      <a href={current.href}>
                         <i className="fa fa-circle text-dark"></i>Paypal
                       </a>
                     </li>
                     <li>
-                      <a>
+                      <a href={current.href}>
                         <i className="fa fa-circle text-primary"></i>Family
                       </a>
                     </li>
@@ -151,13 +158,24 @@ class MailInbox extends React.Component {
                       </label>
                     </div>
                     <div className="btn-group mr-1">
-                      <a className="btn btn-outline-secondary btn-sm hidden-sm">
+                      <a
+                        href={current.href}
+                        className="btn btn-outline-secondary btn-sm hidden-sm"
+                      >
                         Refresh
                       </a>
-                      <a className="btn btn-outline-secondary btn-sm hidden-sm">
+                      <a
+                        href={current.href}
+                        className="btn btn-outline-secondary btn-sm hidden-sm"
+                      >
                         Archive
                       </a>
-                      <a className="btn btn-outline-secondary btn-sm">Trash</a>
+                      <a
+                        href={current.href}
+                        className="btn btn-outline-secondary btn-sm"
+                      >
+                        Trash
+                      </a>
                     </div>
                     <div
                       className={
@@ -175,6 +193,7 @@ class MailInbox extends React.Component {
                         </Dropdown.Toggle>
                         <Dropdown.Menu as="div" className="dropdown-menu">
                           <a
+                            href={current.href}
                             className="dropdown-item"
                             onClick={() => {
                               this.props.onPressTagDropdown();
@@ -183,6 +202,7 @@ class MailInbox extends React.Component {
                             Tag 1
                           </a>
                           <a
+                            href={current.href}
                             className="dropdown-item"
                             onClick={() => {
                               this.props.onPressTagDropdown();
@@ -191,6 +211,7 @@ class MailInbox extends React.Component {
                             Tag 2
                           </a>
                           <a
+                            href={current.href}
                             className="dropdown-item"
                             onClick={() => {
                               this.props.onPressTagDropdown();
@@ -217,6 +238,7 @@ class MailInbox extends React.Component {
                         </Dropdown.Toggle>
                         <Dropdown.Menu as="div" className="dropdown-menu">
                           <a
+                            href={current.href}
                             className="dropdown-item"
                             href="#!"
                             onClick={(e) => {
@@ -226,6 +248,7 @@ class MailInbox extends React.Component {
                             Mark as read
                           </a>
                           <a
+                            href={current.href}
                             className="dropdown-item"
                             onClick={() => {
                               this.props.onPressMoreDropdown();
@@ -234,6 +257,7 @@ class MailInbox extends React.Component {
                             Mark as unread
                           </a>
                           <a
+                            href={current.href}
                             className="dropdown-item"
                             onClick={() => {
                               this.props.onPressMoreDropdown();
@@ -249,6 +273,7 @@ class MailInbox extends React.Component {
                             }}
                           ></div>
                           <a
+                            href={current.href}
                             className="dropdown-item"
                             onClick={() => {
                               this.props.onPressMoreDropdown();
@@ -292,13 +317,15 @@ class MailInbox extends React.Component {
                           />
                           <span></span>
                         </label>
-                        <a className="mail-star active">
+                        <a href={current.href} className="mail-star active">
                           <i className="fa fa-star"></i>
                         </a>
                       </div>
                       <div className="mail-detail-right">
                         <h6 className="sub">
-                          <a className="mail-detail-expand">Herman Beck</a>{" "}
+                          <a href={current.href} className="mail-detail-expand">
+                            Herman Beck
+                          </a>{" "}
                           <span className="badge badge-default mb-0">
                             Marketing
                           </span>
@@ -311,7 +338,7 @@ class MailInbox extends React.Component {
                         <span className="time">23 Jun</span>
                       </div>
                       <div className="hover-action">
-                        <a className="btn btn-warning mr-2">
+                        <a href={current.href} className="btn btn-warning mr-2">
                           <i className="fa fa-archive"></i>
                         </a>
                         <button
@@ -334,13 +361,15 @@ class MailInbox extends React.Component {
                           />
                           <span></span>
                         </label>
-                        <a className="mail-star">
+                        <a href={current.href} className="mail-star">
                           <i className="fa fa-star-o"></i>
                         </a>
                       </div>
                       <div className="mail-detail-right">
                         <h6 className="sub">
-                          <a className="mail-detail-expand">Mary Adams</a>
+                          <a href={current.href} className="mail-detail-expand">
+                            Mary Adams
+                          </a>
                         </h6>
                         <p className="dep">
                           <span className="m-r-10">[Support]</span>There are
@@ -352,7 +381,7 @@ class MailInbox extends React.Component {
                         </span>
                       </div>
                       <div className="hover-action">
-                        <a className="btn btn-warning mr-2">
+                        <a href={current.href} className="btn btn-warning mr-2">
                           <i className="fa fa-archive"></i>
                         </a>
                         <button
@@ -375,13 +404,15 @@ class MailInbox extends React.Component {
                           />
                           <span></span>
                         </label>
-                        <a className="mail-star">
+                        <a href={current.href} className="mail-star">
                           <i className="fa fa-star-o"></i>
                         </a>
                       </div>
                       <div className="mail-detail-right">
                         <h6 className="sub">
-                          <a className="mail-detail-expand">June Lane</a>
+                          <a href={current.href} className="mail-detail-expand">
+                            June Lane
+                          </a>
                           <span className="badge badge-info">Family</span>
                         </h6>
                         <p className="dep">
@@ -392,7 +423,7 @@ class MailInbox extends React.Component {
                         <span className="time">20 Jun</span>
                       </div>
                       <div className="hover-action">
-                        <a className="btn btn-warning mr-2">
+                        <a href={current.href} className="btn btn-warning mr-2">
                           <i className="fa fa-archive"></i>
                         </a>
                         <button
@@ -415,13 +446,15 @@ class MailInbox extends React.Component {
                           />
                           <span></span>
                         </label>
-                        <a className="mail-star">
+                        <a href={current.href} className="mail-star">
                           <i className="fa fa-star-o"></i>
                         </a>
                       </div>
                       <div className="mail-detail-right">
                         <h6 className="sub">
-                          <a className="mail-detail-expand">Gary Camara</a>
+                          <a href={current.href} className="mail-detail-expand">
+                            Gary Camara
+                          </a>
                         </h6>
                         <p className="dep">
                           <span className="m-r-10">[CSS]</span>There are many
@@ -431,7 +464,7 @@ class MailInbox extends React.Component {
                         <span className="time">14 Jun</span>
                       </div>
                       <div className="hover-action">
-                        <a className="btn btn-warning mr-2">
+                        <a href={current.href} className="btn btn-warning mr-2">
                           <i className="fa fa-archive"></i>
                         </a>
                         <button
@@ -454,13 +487,15 @@ class MailInbox extends React.Component {
                           />
                           <span></span>
                         </label>
-                        <a className="mail-star">
+                        <a href={current.href} className="mail-star">
                           <i className="fa fa-star-o"></i>
                         </a>
                       </div>
                       <div className="mail-detail-right">
                         <h6 className="sub">
-                          <a className="mail-detail-expand">Frank Camly</a>
+                          <a href={current.href} className="mail-detail-expand">
+                            Frank Camly
+                          </a>
                           <span className="badge badge-danger">
                             Themeforest
                           </span>
@@ -475,7 +510,7 @@ class MailInbox extends React.Component {
                         </span>
                       </div>
                       <div className="hover-action">
-                        <a className="btn btn-warning mr-2">
+                        <a href={current.href} className="btn btn-warning mr-2">
                           <i className="fa fa-archive"></i>
                         </a>
                         <button
@@ -498,13 +533,15 @@ class MailInbox extends React.Component {
                           />
                           <span></span>
                         </label>
-                        <a className="mail-star">
+                        <a href={current.href} className="mail-star">
                           <i className="fa fa-star-o"></i>
                         </a>
                       </div>
                       <div className="mail-detail-right">
                         <h6 className="sub">
-                          <a className="mail-detail-expand">Gary Camara</a>
+                          <a href={current.href} className="mail-detail-expand">
+                            Gary Camara
+                          </a>
                           <span className="badge badge-success">Work</span>
                         </h6>
                         <p className="dep">
@@ -515,7 +552,7 @@ class MailInbox extends React.Component {
                         <span className="time">29 May</span>
                       </div>
                       <div className="hover-action">
-                        <a className="btn btn-warning mr-2">
+                        <a href={current.href} className="btn btn-warning mr-2">
                           <i className="fa fa-archive"></i>
                         </a>
                         <button
@@ -544,13 +581,22 @@ class MailInbox extends React.Component {
                         </label>
                       </div>
                       <div className="btn-group">
-                        <a className="btn btn-outline-secondary btn-sm hidden-sm">
+                        <a
+                          href={current.href}
+                          className="btn btn-outline-secondary btn-sm hidden-sm"
+                        >
                           Refresh
                         </a>
-                        <a className="btn btn-outline-secondary btn-sm hidden-sm">
+                        <a
+                          href={current.href}
+                          className="btn btn-outline-secondary btn-sm hidden-sm"
+                        >
                           Archive
                         </a>
-                        <a className="btn btn-outline-secondary btn-sm">
+                        <a
+                          href={current.href}
+                          className="btn btn-outline-secondary btn-sm"
+                        >
                           Trash
                         </a>
                       </div>
@@ -563,9 +609,15 @@ class MailInbox extends React.Component {
                           Tags
                         </button>
                         <div className="dropdown-menu show">
-                          <a className="dropdown-item">Tag 1</a>
-                          <a className="dropdown-item">Tag 2</a>
-                          <a className="dropdown-item">Tag 3</a>
+                          <a href={current.href} className="dropdown-item">
+                            Tag 1
+                          </a>
+                          <a href={current.href} className="dropdown-item">
+                            Tag 2
+                          </a>
+                          <a href={current.href} className="dropdown-item">
+                            Tag 3
+                          </a>
                         </div>
                       </div>
                       <div className="btn-group">
@@ -579,19 +631,30 @@ class MailInbox extends React.Component {
                           More
                         </button>
                         <div className="dropdown-menu">
-                          <a className="dropdown-item">Mark as read</a>
-                          <a className="dropdown-item">Mark as unread</a>
-                          <a className="dropdown-item">Spam</a>
+                          <a href={current.href} className="dropdown-item">
+                            Mark as read
+                          </a>
+                          <a href={current.href} className="dropdown-item">
+                            Mark as unread
+                          </a>
+                          <a href={current.href} className="dropdown-item">
+                            Spam
+                          </a>
                           <div
                             role="separator"
                             className="dropdown-divider"
                           ></div>
-                          <a className="dropdown-item">Delete</a>
+                          <a href={current.href} className="dropdown-item">
+                            Delete
+                          </a>
                         </div>
                       </div>
                     </div>
                     <div className="pull-right ml-auto">
-                      <a className="mail-back btn btn-outline-secondary btn-sm">
+                      <a
+                        href={current.href}
+                        className="mail-back btn btn-outline-secondary btn-sm"
+                      >
                         <i className="fa fa-close"></i>
                       </a>
                     </div>
@@ -609,7 +672,7 @@ class MailInbox extends React.Component {
                       <div className="media-body">
                         <p className="mb-0">
                           <strong className="text-muted m-r-5">From:</strong>
-                          <a className="text-default">
+                          <a href={current.href} className="text-default">
                             info@thememakker.com
                           </a>{" "}
                           <span className="text-muted text-sm float-right">
@@ -625,7 +688,9 @@ class MailInbox extends React.Component {
                         </p>
                         <p className="mb-0">
                           <strong className="text-muted m-r-5">CC:</strong>
-                          <a className="text-default">mail@thememakker.com</a>
+                          <a href={current.href} className="text-default">
+                            mail@thememakker.com
+                          </a>
                         </p>
                       </div>
                     </div>
@@ -649,8 +714,13 @@ class MailInbox extends React.Component {
                     </p>
                     <hr />
                     <strong>Click here to</strong>
-                    <a href="appinbox">Reply</a> or
-                    <a href="appinbox">Forward</a>
+                    <a href={current.href} href="appinbox">
+                      Reply
+                    </a>{" "}
+                    or
+                    <a href={current.href} href="appinbox">
+                      Forward
+                    </a>
                   </div>
                 </div>
               </div>

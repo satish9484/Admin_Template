@@ -1,5 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
+import { Link } from "react-router-dom";
 
 class UIListGroupLinksandbuttons extends React.Component {
   render() {
@@ -15,21 +16,21 @@ class UIListGroupLinksandbuttons extends React.Component {
                 <div className="col-lg-6 col-md-12">
                   <h6>With Anchor</h6>
                   <div className="list-group">
-                    <a className="list-group-item list-group-item-action active">
+                    <Link className="list-group-item list-group-item-action active">
                       Cras justo odio
-                    </a>
-                    <a className="list-group-item list-group-item-action">
+                    </Link>
+                    <Link className="list-group-item list-group-item-action">
                       Dapibus ac facilisis in
-                    </a>
-                    <a className="list-group-item list-group-item-action">
+                    </Link>
+                    <Link className="list-group-item list-group-item-action">
                       Morbi leo risus
-                    </a>
-                    <a className="list-group-item list-group-item-action">
+                    </Link>
+                    <Link className="list-group-item list-group-item-action">
                       Porta ac consectetur ac
-                    </a>
-                    <a className="list-group-item list-group-item-action disabled">
+                    </Link>
+                    <Link className="list-group-item list-group-item-action disabled">
                       Vestibulum at eros
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="col-lg-6 col-md-12">

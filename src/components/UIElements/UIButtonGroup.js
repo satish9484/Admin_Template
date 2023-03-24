@@ -1,6 +1,7 @@
 import React from "react";
 import { Dropdown } from "react-bootstrap";
 import { connect } from "react-redux";
+import { Link } from "react-router-dom";
 
 class UIButtonGroupCard extends React.Component {
   render() {
@@ -195,8 +196,8 @@ class UIButtonGroupCard extends React.Component {
                       as="ul"
                       className="dropdown-menu dropdown-menu-right"
                     >
-                      <a className="dropdown-item">Dropdown link</a>
-                      <a className="dropdown-item">Dropdown link</a>
+                      <Link className="dropdown-item">Dropdown link</Link>
+                      <Link className="dropdown-item">Dropdown link</Link>
                     </Dropdown.Menu>
                   </Dropdown>
                 </div>

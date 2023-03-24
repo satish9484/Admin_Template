@@ -72,7 +72,7 @@ class PageHeader extends React.Component {
             </h2>
             <ul className="breadcrumb">
               <li className="breadcrumb-item">
-                <a href="dashboard">
+                <a href="mypage">
                   <i className="icon-home"></i>
                 </a>
               </li>

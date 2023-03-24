@@ -85,12 +85,13 @@ export const areaChartFileReport = {
   yAxis: [
     {
       type: "value",
-      splitLine: { show: false },
       splitLine: {
+        show: false,
         lineStyle: {
           type: "dotted",
         },
       },
+
       axisLine: {
         show: false,
       },

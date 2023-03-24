@@ -7,6 +7,7 @@ import Avatar3 from "../assets/images/xs/avatar3.jpg";
 import Avatar7 from "../assets/images/xs/avatar7.jpg";
 import Avatar8 from "../assets/images/xs/avatar8.jpg";
 import Avatar9 from "../assets/images/xs/avatar9.jpg";
+import { Link } from "react-router-dom";
 
 class ChatInbox extends React.Component {
   render() {
@@ -89,27 +90,27 @@ class ChatInbox extends React.Component {
               <div className="chat-header clearfix">
                 <div className="row">
                   <div className="col-lg-6">
-                    <a data-target="#view_info" data-toggle="modal">
+                    <Link data-target="#view_info" data-toggle="modal">
                       <img alt="avatar" src={Avatar2} />
-                    </a>
+                    </Link>
                     <div className="chat-about">
                       <h6 className="m-b-0">Aiden Chavez</h6>
                       <small>Last seen: 2 hours ago</small>
                     </div>
                   </div>
                   <div className="col-lg-6 hidden-sm text-right">
-                    <a className="btn btn-outline-secondary mr-1">
+                    <Link className="btn btn-outline-secondary mr-1">
                       <i className="icon-camera"></i>
-                    </a>
-                    <a className="btn btn-outline-primary mr-1">
+                    </Link>
+                    <Link className="btn btn-outline-primary mr-1">
                       <i className="icon-camcorder"></i>
-                    </a>
-                    <a className="btn btn-outline-info mr-1">
+                    </Link>
+                    <Link className="btn btn-outline-info mr-1">
                       <i className="icon-settings"></i>
-                    </a>
-                    <a className="btn btn-outline-warning mr-1">
+                    </Link>
+                    <Link className="btn btn-outline-warning mr-1">
                       <i className="icon-question"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

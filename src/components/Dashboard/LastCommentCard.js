@@ -5,6 +5,7 @@ import avatar5 from "../../assets/images/xs/avatar5.jpg";
 import avatar2 from "../../assets/images/xs/avatar2.jpg";
 import avatar1 from "../../assets/images/xs/avatar1.jpg";
 import avatar3 from "../../assets/images/xs/avatar3.jpg";
+import { Link } from "react-router-dom";
 
 class LastCommentCard extends React.Component {
   render() {
@@ -16,7 +17,7 @@ class LastCommentCard extends React.Component {
         <div className="body">
           <ul className="right_chat list-unstyled">
             <li className="online">
-              <a>
+              <Link>
                 <div className="media">
                   <img alt="" className="media-object " src={avatar4} />
                   <div className="media-body">
@@ -29,10 +30,10 @@ class LastCommentCard extends React.Component {
                     <span className="badge badge-outline status"></span>
                   </div>
                 </div>
-              </a>
+              </Link>
             </li>
             <li className="online">
-              <a>
+              <Link>
                 <div className="media">
                   <img alt="" className="media-object " src={avatar5} />
                   <div className="media-body">
@@ -46,10 +47,10 @@ class LastCommentCard extends React.Component {
                     <span className="badge badge-outline status"></span>
                   </div>
                 </div>
-              </a>
+              </Link>
             </li>
             <li className="offline">
-              <a>
+              <Link>
                 <div className="media">
                   <img alt="" className="media-object " src={avatar2} />
                   <div className="media-body">
@@ -64,10 +65,10 @@ class LastCommentCard extends React.Component {
                     <span className="badge badge-outline status"></span>
                   </div>
                 </div>
-              </a>
+              </Link>
             </li>
             <li className="offline">
-              <a>
+              <Link>
                 <div className="media">
                   <img alt="" className="media-object " src={avatar1} />
                   <div className="media-body">
@@ -82,10 +83,10 @@ class LastCommentCard extends React.Component {
                     <span className="badge badge-outline status"></span>
                   </div>
                 </div>
-              </a>
+              </Link>
             </li>
             <li className="online">
-              <a>
+              <Link>
                 <div className="media">
                   <img alt="" className="media-object " src={avatar3} />
                   <div className="media-body">
@@ -99,7 +100,7 @@ class LastCommentCard extends React.Component {
                     <span className="badge badge-outline status"></span>
                   </div>
                 </div>
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

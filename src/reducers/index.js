@@ -7,7 +7,7 @@ import ioTReducer from "./ioTReducer";
 import mailInboxReducer from "./mailInboxReducer";
 import UIElementsReducer from "./UIElementsReducer";
 
-export default combineReducers({
+export default  combineReducers({
   loginReducer,
   navigationReducer: navigationReducer,
   analyticalReducer: analyticalReducer,
@@ -16,3 +16,15 @@ export default combineReducers({
   mailInboxReducer: mailInboxReducer,
   UIElementsReducer: UIElementsReducer,
 });
+
+
+// export const reducers =  (history) => combineReducers({
+//   loginReducer,
+//   navigationReducer: navigationReducer,
+//   analyticalReducer: analyticalReducer,
+//   demographicReducer: demographicReducer,
+//   ioTReducer: ioTReducer,
+//   mailInboxReducer: mailInboxReducer,
+//   UIElementsReducer: UIElementsReducer,
+// });
+

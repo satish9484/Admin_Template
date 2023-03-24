@@ -1,9 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
+
+import {store} from "./redux/store";
 import { Provider } from "react-redux";
-import { createStore, applyMiddleware } from "redux";
-import thunk from "redux-thunk";
-import reducers from "./reducers";
+
+
 import { BrowserRouter } from "react-router-dom";
 import "./index.css";
 import App from "./App";
@@ -14,7 +15,9 @@ import "./assets/assets/scss/color_skins.scss";
 import "../node_modules/font-awesome/scss/font-awesome.scss";
 
 
-const store = createStore(reducers, applyMiddleware(thunk));
+
+
+
 
 ReactDOM.render(
   <Provider store={store}>

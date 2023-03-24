@@ -55,7 +55,7 @@ class IoT extends React.Component {
       >
         <div >
           <div className="container-fluid">
-            <PageHeader HeaderText="IoT Dashboard" Breadcrumb={[{ name: "Dashboard", navigate: "" }, { name: "IoT Dashboard", navigate: "" }]} />
+            <PageHeader HeaderText="IoT Dashboard" Breadcrumb={[{ name: "Dashboard", navigate: "dashboard" }, { name: "IoT Dashboard", navigate: "" }]} />
             <div className="row clearfix">
               {sparkleCardData.map((data, i) => {
                 return (

@@ -13,8 +13,6 @@ const zoomLevel = 10;
 class Faqs extends React.Component {
   componentDidMount() {
     window.scrollTo(0, 0);
-  }
-  componentDidMount() {
     const leafletMap = this.leafletMap.leafletElement;
     leafletMap.on("zoomend", () => {
       // Actions for on zoomed event

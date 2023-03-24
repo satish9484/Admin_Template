@@ -1,5 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
+import { Link } from "react-router-dom";
 
 class ProfileV2Tabs extends React.Component {
   constructor(props) {
@@ -16,7 +17,7 @@ class ProfileV2Tabs extends React.Component {
           <div className="body">
             <ul className="nav nav-tabs-new">
               <li className="nav-item  mr-1">
-                <a
+                <Link
                   className={`nav-link ${!tab ? "active" : ""}`}
                   onClick={() => {
                     this.setState({ tab: false });
@@ -24,17 +25,17 @@ class ProfileV2Tabs extends React.Component {
                 >
                   {" "}
                   Overview
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a
+                <Link
                   className={`nav-link ${tab ? "active" : ""}`}
                   onClick={() => {
                     this.setState({ tab: true });
                   }}
                 >
                   Settings
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -48,11 +49,11 @@ class ProfileV2Tabs extends React.Component {
               <div className="body">
                 <div className="new_post">
                   <div className="form-group">
-                    <textarea
+                    <textareLink
                       rows="4"
                       className="form-control no-resize"
                       placeholder="Please type what you want..."
-                    ></textarea>
+                    ></textareLink>
                   </div>
                   <div className="post-toolbar-b">
                     <button className="btn btn-warning mr-1">
@@ -76,7 +77,7 @@ class ProfileV2Tabs extends React.Component {
                   />
                 </div>
                 <h3>
-                  <a href="blogdetails">All photographs are accurate</a>
+                  <Link href="blogdetails">All photographs are accurate</Link>
                 </h3>
                 <p>
                   It is a long established fact that a reader will be distracted
@@ -87,17 +88,17 @@ class ProfileV2Tabs extends React.Component {
               </div>
               <div className="footer">
                 <div className="actions">
-                  <a className="btn btn-outline-secondary">Continue Reading</a>
+                  <Link className="btn btn-outline-secondary">Continue Reading</Link>
                 </div>
                 <ul className="stats">
                   <li>
-                    <a>General</a>
+                    <Link>General</Link>
                   </li>
                   <li>
-                    <a className="icon-heart">28</a>
+                    <Link className="icon-heart">28</Link>
                   </li>
                   <li>
-                    <a className="icon-bubbles">128</a>
+                    <Link className="icon-bubbles">128</Link>
                   </li>
                 </ul>
               </div>
@@ -112,7 +113,7 @@ class ProfileV2Tabs extends React.Component {
                   />
                 </div>
                 <h3>
-                  <a href="blogdetails">All photographs are accurate</a>
+                  <Link href="blogdetails">All photographs are accurate</Link>
                 </h3>
                 <p>
                   It is a long established fact that a reader will be distracted
@@ -123,17 +124,17 @@ class ProfileV2Tabs extends React.Component {
               </div>
               <div className="footer">
                 <div className="actions">
-                  <a className="btn btn-outline-secondary">Continue Reading</a>
+                  <Link className="btn btn-outline-secondary">Continue Reading</Link>
                 </div>
                 <ul className="stats">
                   <li>
-                    <a>General</a>
+                    <Link>General</Link>
                   </li>
                   <li>
-                    <a className="icon-heart">28</a>
+                    <Link className="icon-heart">28</Link>
                   </li>
                   <li>
-                    <a className="icon-bubbles">128</a>
+                    <Link className="icon-bubbles">128</Link>
                   </li>
                 </ul>
               </div>

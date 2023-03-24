@@ -31,9 +31,9 @@ class NavbarMenu extends React.Component {
   };
   componentDidMount() {
     this.props.tostMessageLoad(true);
-    var res = window.location.pathname;
-    res = res.split("/");
-    res = res.length > 4 ? res[4] : "/";
+    // var res = window.location.pathname;
+    // res = res.split("/");
+    // res = res.length > 4 ? res[4] : "/";
     const { activeKey } = this.props;
     this.activeMenutabwhenNavigate("/" + activeKey);
   }
@@ -153,7 +153,7 @@ class NavbarMenu extends React.Component {
       isToastMessage,
       activeKey,
     } = this.props;
-    var path = window.location.pathname;
+    // var path = window.location.pathname;
     document.body.classList.add(themeColor);
 
     return (
@@ -170,7 +170,7 @@ class NavbarMenu extends React.Component {
             delay={5000}
           >
             <Toast.Header className="toast-info mb-0">
-              Hello, welcome to Lucid, a unique admin Template.
+              Hello, welcome to the admin Template.
             </Toast.Header>
           </Toast>
         ) : null}
@@ -189,7 +189,9 @@ class NavbarMenu extends React.Component {
 
             <div className="navbar-brand">
               <a href="dashboard">
-                <img
+
+                AUTO
+                {/* <img
                   src={
                     document.body.classList.contains("full-dark")
                       ? LogoWhite
@@ -197,7 +199,7 @@ class NavbarMenu extends React.Component {
                   }
                   alt="Lucid Logo"
                   className="img-responsive logo"
-                />
+                /> */}
               </a>
             </div>
 

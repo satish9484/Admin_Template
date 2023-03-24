@@ -3,10 +3,11 @@ import { connect } from "react-redux";
 import { Dropdown } from "react-bootstrap";
 import PropTypes from "prop-types";
 import { onPressRecentChatDropDown } from "../../actions";
+import { Button } from "antd";
 
 class ResentChat extends React.Component {
   render() {
-    const { recentChatDropDown } = this.props;
+   // const { recentChatDropDown } = this.props;
     return (
       <div className="card">
         <div className="header">
@@ -19,13 +20,13 @@ class ResentChat extends React.Component {
                 className="dropdown-menu dropdown-menu-right"
               >
                 <li>
-                  <a>Action</a>
+                  <Button type="link" >Action</Button>
                 </li>
                 <li>
-                  <a>Another Action</a>
+                <Button type="link">Another Action</Button>
                 </li>
                 <li>
-                  <a>Something else</a>
+                <Button type="link">Something else</Button>
                 </li>
               </Dropdown.Menu>
             </Dropdown.Toggle>

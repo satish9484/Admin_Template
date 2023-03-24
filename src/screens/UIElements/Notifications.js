@@ -96,7 +96,6 @@ class UINotifications extends React.Component {
                 </Toast.Body>
               );
             }
-            
           })}
         </Toast>
         <Toast

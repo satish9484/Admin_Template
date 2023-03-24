@@ -6,7 +6,7 @@ import { onPressReferralsDropDown } from "../../actions";
 
 class ReferralsCard extends React.Component {
   render() {
-    const { referralsDropDown } = this.props;
+    // const { referralsDropDown } = this.props;
     return (
       <div className="card">
         <div className="header">

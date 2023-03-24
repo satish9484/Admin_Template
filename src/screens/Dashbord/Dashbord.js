@@ -34,7 +34,7 @@ import {
 } from "../../actions";
 import SparkleCard from "../../components/SparkleCard";
 
-var timer = null;
+// var timer = null;
 class Dashbord extends React.Component {
   constructor(props) {
     super(props);
@@ -66,9 +66,9 @@ class Dashbord extends React.Component {
     cardData.map((data, i) => {
       var uData = [];
       data.sparklineData.data.map((d, j) => {
-        uData[j] = Math.floor(Math.random() * 10) + 1;
+       return uData[j] = Math.floor(Math.random() * 10) + 1;
       });
-      allCardData[i].sparklineData.data = [...uData];
+     return allCardData[i].sparklineData.data = [...uData];
     });
     this.setState({ cardData: [...allCardData] });
   }
