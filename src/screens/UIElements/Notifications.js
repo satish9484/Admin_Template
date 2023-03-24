@@ -74,7 +74,7 @@ class UINotifications extends React.Component {
           onClose={() => {}}
         >
           {notifyData.map((data, i) => {
-           return if (data.position === "top-right") {
+            if (data.position === "top-right") {
               setTimeout(() => {
                 this.props.notifyOnClose(i);
               }, 10000);
@@ -96,6 +96,7 @@ class UINotifications extends React.Component {
                 </Toast.Body>
               );
             }
+            
           })}
         </Toast>
         <Toast
@@ -314,4 +315,4 @@ const mapStateToProps = ({ UIElementsReducer }) => ({
 export default connect(mapStateToProps, {
   onPressSimpleTab,
   notifyOnClose,
-})(UINotificatio
+})(UINotifications);
