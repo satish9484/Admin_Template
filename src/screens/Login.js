@@ -4,7 +4,7 @@ import {
   // connect,
   useDispatch,
 } from "react-redux";
-import PropTypes from "prop-types";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import Logo from "../assets/images/logo-white.svg";
 
@@ -80,7 +80,9 @@ export const Login = () => {
                 <div className="body">
                   <div className="form-auth-small" action="index.html">
                     <div className="form-group">
-                      <label htmlFor="email" className="control-label sr-only">Email</label>
+                      <label htmlFor="email" className="control-label sr-only">
+                        Email
+                      </label>
                       <input
                         className="form-control"
                         id="signin-email"
@@ -92,7 +94,12 @@ export const Login = () => {
                       />
                     </div>
                     <div className="form-group">
-                      <label htmlFor="password" className="control-label sr-only">Password</label>
+                      <label
+                        htmlFor="password"
+                        className="control-label sr-only"
+                      >
+                        Password
+                      </label>
                       <input
                         className="form-control"
                         id="signin-password"
@@ -109,14 +116,11 @@ export const Login = () => {
                         <span>Remember me</span>
                       </label>
                     </div>
-                    <a href="/">
-                      <Button
-                        className="btn btn-primary btn-lg btn-block"
-                        type="default"
-                        onClick={hadnleSubmit}
-                      >
-                        Login
-                      </Button>
+                    <a
+                      className="btn btn-primary btn-lg btn-block"
+                      href="mypage"
+                    >
+                      Login
                     </a>
                     <div className="bottom">
                       <span className="helper-text m-b-10">
@@ -139,10 +143,4 @@ export const Login = () => {
       </div>
     </div>
   );
-};
-
-Login.propTypes = {
-  userInfo: PropTypes.func.isRequired,
-  email: PropTypes.string.isRequired,
-  password: PropTypes.string.isRequired,
 };
