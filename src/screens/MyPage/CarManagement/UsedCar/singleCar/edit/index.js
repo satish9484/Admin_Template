@@ -2,7 +2,7 @@ import { Button, Form, Input, InputNumber, Select } from "antd";
 import React from "react";
 import { Link } from "react-router-dom";
 
-import Card from "../../../../../../components/common/Card";
+// import Card from "../../../../../../components/common/Card";
 
 import LogoiCON from "../../../../../../assets/images/logo-icon.svg";
 import PageHeader from "../../../../../../components/PageHeader";
@@ -80,7 +80,7 @@ const EditSingleCar = (props) => {
                     </div>
                     <div className="body">
                       <div className="editSingleCarPost">
-                        <Card>
+                     
                           <Form
                             layout="vertical"
                             initialValues={{
@@ -235,7 +235,7 @@ const EditSingleCar = (props) => {
                               </div>
                             </div>
                           </Form>
-                        </Card>
+                        
                       </div>
                     </div>
                   </div>

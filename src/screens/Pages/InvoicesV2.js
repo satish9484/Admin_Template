@@ -38,6 +38,7 @@ class InvoicesV2 extends React.Component {
                     <ul className="header-dropdown">
                       <li className="dropdown">
                         <a
+                          href=" "
                           aria-expanded="false"
                           aria-haspopup="true"
                           className="dropdown-toggle"
@@ -46,17 +47,17 @@ class InvoicesV2 extends React.Component {
                         ></a>
                         <ul className="dropdown-menu dropdown-menu-right">
                           <li>
-                            <a>Print Invoices</a>
+                            <a href=" ">Print Invoices</a>
                           </li>
                           <li className="divider" role="presentation"></li>
                           <li>
-                            <a>Export to XLS</a>
+                            <a href=" ">Export to XLS</a>
                           </li>
                           <li>
-                            <a>Export to CSV</a>
+                            <a href=" ">Export to CSV</a>
                           </li>
                           <li>
-                            <a>Export to XML</a>
+                            <a href=" ">Export to XML</a>
                           </li>
                         </ul>
                       </li>
@@ -70,6 +71,7 @@ class InvoicesV2 extends React.Component {
                     <ul className="nav nav-tabs-new2">
                       <li className="nav-item inlineblock">
                         <a
+                          href=" "
                           className={`nav-link ${!tab && "active"}`}
                           fragment="details"
                           onClick={() => {
@@ -81,6 +83,7 @@ class InvoicesV2 extends React.Component {
                       </li>
                       <li className="nav-item inlineblock">
                         <a
+                          href=" "
                           className={`nav-link ${tab && "active"}`}
                           fragment="history"
                           onClick={() => {

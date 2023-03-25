@@ -12,21 +12,23 @@ const SingleCar = () => {
 
   return (
     <>
-      <div className="multipleCarPost shadow-paper auto-height "> 
-        <Row className="search-filter-container mar-bottom-8">
-          <Col  xs={{ span: 24, offset: 0 }} lg={{ span: 10, offset: 14 }}>
-            <div className="searchGrp">
-              <Search
-                placeholder="Input search text"
-                size="large"
-                onSearch={onSearch}
-              />
-            </div>
-          </Col>
-       
-        </Row>
-        <SingleCarTable />
-      </div>
+      <Row className="search-filter-container mar-bottom-8">
+        <Col
+          xs={{ span: 24, offset: 0 }}
+          sm={{ span: 18, offset: 6 }}
+          md={{ span: 16, offset: 8 }}
+          lg={{ span: 10, offset: 14 }}
+        >
+          <div className="searchGrp">
+            <Search
+              placeholder="Input search text"
+              size="large"
+              onSearch={onSearch}
+            />
+          </div>
+        </Col>
+      </Row>
+      <SingleCarTable />
     </>
   );
 };

@@ -77,7 +77,7 @@ class UIButtonCard extends React.Component {
               <h2>Button tags</h2>
             </div>
             <div className="body">
-              <a className="btn btn-primary mr-1" role="button">
+              <a href=" " className="btn btn-primary mr-1" role="button">
                 Link
               </a>
               <button className="btn btn-primary mr-1" type="submit">

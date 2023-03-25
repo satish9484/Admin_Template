@@ -1,8 +1,11 @@
-@import "../../../scss/variable";
-@import "../../../scss/mixin";
-@import "../../../scss/flex";
+@import "../../../assets/assets/scss/myscss/variable";
+@import "../../../assets/assets/scss/myscss/mixin";
+@import "../../../assets/assets/scss/myscss/flex";
 
 /*============================================= Tab =============================================== */
+:where(.css-dev-only-do-not-override-mxhywb).ant-tabs {
+  width: 100%;
+}
 
 .ant-tabs-ink-bar {
   position: absolute;
@@ -12,11 +15,35 @@
 
 /*============================================= pagination =============================================== */
 
-.ant-pagination .ant-pagination-item-active a {
-  border-radius: 8px;
-  padding-bottom: 1px;
-  color: $white !important;
-  background-color: $primary;
+:where(.css-dev-only-do-not-override-mxhywb).ant-pagination {
+  box-sizing: border-box;
+  background-color: #30303a;
+  .ant-pagination-item {
+    background-color: white;
+
+    a:hover {
+      border-radius: 6px;
+      background-color: #686885;
+    }
+  }
+
+  .ant-pagination-prev,
+  .ant-pagination-next {
+    background-color: white;
+
+    .ant-pagination-item-link {
+      display: flex;
+      align-items: center;
+      background-color: white;
+      justify-content: center;
+    }
+  }
+
+  .ant-pagination-item-active {
+    color: whitesmoke;
+    border-color: black;
+    background-color: #686885;
+  }
 }
 
 /*============================================= Filter =============================================== */
@@ -33,56 +60,13 @@
 .search-filter-container {
   display: flex;
 
-  // .search-bar {
-  //   width: 50%;
-  //   background: $white;
-  //   border: 1px solid $placeholder-color;
-  //   border-radius: 10px;
-  //   max-height: 45px;
-  //   padding: 5px 15px;
-  //   display: flex;
-  //   justify-content: start;
-  //   align-items: center;
-
-  //   .ant-btn {
-  //     border: none;
-  //     padding: 0;
-  //     // border-radius: 20px;
-  //   }
-
-  //   .ant-btn-icon-only.ant-btn-lg {
-  //     width: 20px;
-  //     height: 20px;
-  //     padding: 4.9px 0;
-  //     font-size: 18px;
-  //     border-radius: 2px;
-  //   }
-
-  //   .ant-input-group {
-  //     display: flex;
-  //     flex-direction: row-reverse;
-  //     gap: 20px;
-  //     justify-content: start;
-  //   }
-
-  //   .ant-input-affix-wrapper {
-  //     max-width: 100% !important;
-  //     max-height: 20px;
-  //     padding: 0;
-  //   }
-
-  //   .ant-input {
-  //     max-height: 20px;
-  //   }
-  // }
-
   .filter {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     .dropdown {
       position: relative;
       display: flex;
-      justify-content: end;
+      justify-content: flex-end;
       width: 100%;
 
       .dropbtn {
@@ -131,21 +115,39 @@
 
 // --------------------------- For Table Cell   -----------------------------------
 
-.ant-table {
-  //  table head
-  .ant-table-thead {
-    tr {
-      th {
-        padding: 12px !important;
+:where(.css-dev-only-do-not-override-mxhywb).ant-table-wrapper {
+  table {
+    //  table head
+    background-color: #30303a;
+    color: whitesmoke;
+    .ant-table-thead {
+      background-color: #30303a;
+
+      tr {
+        th {
+          background: none;
+          color: aqua;
+          padding: 12px !important;
+
+          &::before {
+            display: none;
+          }
+        }
       }
     }
-  }
 
-  //  table body
-  .ant-table-tbody {
-    tr {
-      .ant-table-cell {
-        padding: 4px 16px !important;
+    //  table body
+    .ant-table-tbody {
+      tr {
+        .ant-table-cell {
+          padding: 4px 16px !important;
+          > &:hover {
+            background-color: #523a3a;
+          }
+        }
+      }
+      > tr.ant-table-row:hover > td {
+        background-color: #b6b5bd;
       }
     }
   }
@@ -153,7 +155,7 @@
 
 // --------------------------- Status   -----------------------------------
 .status-active {
-  // border: 1px solid green;
+   border: 1px solid green;
   color: green;
 }
 
@@ -187,8 +189,8 @@
     width: 100%;
     gap: 10px;
     grid-template-rows: 100px;
-    justify-content: start;
-    align-items: start;
+    justify-content: flex-start;
+    align-items: flex-end;
 
     .filed-label {
       width: 100%;

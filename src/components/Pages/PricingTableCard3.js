@@ -3,7 +3,13 @@ import { connect } from "react-redux";
 
 class PricingTableCard3 extends React.Component {
   render() {
-    const { list, head, price, joined, img } = this.props;
+    const { 
+      // list,
+       head, 
+       price, 
+      //  joined,
+        img
+       } = this.props;
     return (
       <div className="col-lg-4 col-md-12">
         <div className="card pricing3">
@@ -25,7 +31,9 @@ class PricingTableCard3 extends React.Component {
                   {price} <b>$</b>
                 </span>
               </div>
-              <a className="btn btn-outline-secondary">Purchase now</a>
+              <a href=" " className="btn btn-outline-secondary">
+                Purchase now
+              </a>
             </div>
           </div>
         </div>

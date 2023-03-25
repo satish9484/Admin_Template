@@ -43,6 +43,7 @@ class UISimpleTabCard extends React.Component {
                         }
                       >
                         <a
+                          href=" "
                           className={
                             keys === Wind.perent
                               ? activeIndex[index]

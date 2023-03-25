@@ -21,34 +21,54 @@ class UIColorsContextual extends React.Component {
               </strong>
             </p>
             <p>
-              <a className="text-primary">Primary link</a>
+              <a href=" " className="text-primary">
+                Primary link
+              </a>
             </p>
             <p>
-              <a className="text-secondary">Secondary link</a>
+              <a href=" " className="text-secondary">
+                Secondary link
+              </a>
             </p>
             <p>
-              <a className="text-success">Success link</a>
+              <a href=" " className="text-success">
+                Success link
+              </a>
             </p>
             <p>
-              <a className="text-danger">Danger link</a>
+              <a href=" " className="text-danger">
+                Danger link
+              </a>
             </p>
             <p>
-              <a className="text-warning">Warning link</a>
+              <a href=" " className="text-warning">
+                Warning link
+              </a>
             </p>
             <p>
-              <a className="text-info">Info link</a>
+              <a href=" " className="text-info">
+                Info link
+              </a>
             </p>
             <p>
-              <a className="text-light bg-dark">Light link</a>
+              <a href=" " className="text-light bg-dark">
+                Light link
+              </a>
             </p>
             <p>
-              <a className="text-dark">Dark link</a>
+              <a href=" " className="text-dark">
+                Dark link
+              </a>
             </p>
             <p>
-              <a className="text-muted">Muted link</a>
+              <a href=" " className="text-muted">
+                Muted link
+              </a>
             </p>
             <p>
-              <a className="text-white bg-dark">White link</a>
+              <a href=" " className="text-white bg-dark">
+                White link
+              </a>
             </p>
           </div>
         </div>

@@ -24,12 +24,12 @@ class TwitterFeedCard extends React.Component {
               ></textarea>
             </div>
             <button className="btn btn-primary mr-1">Tweet</button>
-            <a>13K users active</a>
+            <a href=" ">13K users active</a>
           </form>
           <hr />
           <ul className="right_chat list-unstyled mb-0">
             <li className="offline">
-              <a>
+              <a href=" ">
                 <div className="media">
                   <img className="media-object " src={avatar2} alt="" />
                   <div className="media-body">
@@ -46,7 +46,7 @@ class TwitterFeedCard extends React.Component {
               </a>
             </li>
             <li className="online">
-              <a>
+              <a href=" ">
                 <div className="media">
                   <img className="media-object " src={avatar3} alt="" />
                   <div className="media-body">
@@ -63,7 +63,7 @@ class TwitterFeedCard extends React.Component {
               </a>
             </li>
             <li className="online">
-              <a>
+              <a href=" ">
                 <div className="media">
                   <img className="media-object " src={avatar4} alt="" />
                   <div className="media-body">

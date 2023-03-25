@@ -49,7 +49,9 @@ class UIBootstrapSimpleExampleTab extends React.Component {
                   this.onTabChange(1);
                 }}
               >
-                <a className="nav-link active">Home</a>
+                <a href=" " className="nav-link active">
+                  Home
+                </a>
               </li>
               <li
                 className="nav-item mr-1"
@@ -59,7 +61,7 @@ class UIBootstrapSimpleExampleTab extends React.Component {
                   this.onTabChange(2);
                 }}
               >
-                <a className="nav-link" data-toggle="tab">
+                <a href=" " className="nav-link" data-toggle="tab">
                   Profile
                 </a>
               </li>
@@ -71,7 +73,7 @@ class UIBootstrapSimpleExampleTab extends React.Component {
                   this.onTabChange(3);
                 }}
               >
-                <a className="nav-link" data-toggle="tab">
+                <a href=" " className="nav-link" data-toggle="tab">
                   Contact
                 </a>
               </li>

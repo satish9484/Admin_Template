@@ -17,7 +17,9 @@ class PriceCard extends React.Component {
               <li>Styled elements</li>
             </ul>
             <span className="pricing-price">$349</span>
-            <a className="btn btn-outline-primary">Join Now</a>
+            <a href=" " className="btn btn-outline-primary">
+              Join Now
+            </a>
           </div>
         </div>
       </div>

@@ -13,7 +13,7 @@ class UIMediaObjectDefault extends React.Component {
             <div className="media mleft">
               <div className="media-left">
                 {" "}
-                <a>
+                <a href=" ">
                   {" "}
                   <img
                     className="media-object"
@@ -36,7 +36,7 @@ class UIMediaObjectDefault extends React.Component {
             <div className="media mleft">
               <div className="media-left">
                 {" "}
-                <a>
+                <a href=" ">
                   {" "}
                   <img
                     alt=""
@@ -57,7 +57,7 @@ class UIMediaObjectDefault extends React.Component {
                 <div className="media m-t-20">
                   <div className="media-left">
                     {" "}
-                    <a>
+                    <a href=" ">
                       {" "}
                       <img
                         alt=""
@@ -88,7 +88,7 @@ class UIMediaObjectDefault extends React.Component {
               </div>
               <div className="media-right">
                 {" "}
-                <a>
+                <a href=" ">
                   {" "}
                   <img
                     alt=""
@@ -103,7 +103,7 @@ class UIMediaObjectDefault extends React.Component {
             <div className="media mleft">
               <div className="media-left">
                 {" "}
-                <a>
+                <a href=" ">
                   {" "}
                   <img
                     alt=""
@@ -122,7 +122,7 @@ class UIMediaObjectDefault extends React.Component {
               </div>
               <div className="media-right">
                 {" "}
-                <a>
+                <a href=" ">
                   {" "}
                   <img
                     className="media-object"

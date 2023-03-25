@@ -16,8 +16,8 @@ import {
   onPressSideMenuTab,
   tostMessageLoad,
 } from "../actions";
-import Logo from "../assets/images/logo.svg";
-import LogoWhite from "../assets/images/logo-white.svg";
+// import Logo from "../assets/images/logo.svg";
+// import LogoWhite from "../assets/images/logo-white.svg";
 import UserImage from "../assets/images/user.png";
 import Avatar4 from "../assets/images/xs/avatar4.jpg";
 import Avatar5 from "../assets/images/xs/avatar5.jpg";
@@ -189,7 +189,7 @@ class NavbarMenu extends React.Component {
             </div>
 
             <div className="navbar-brand">
-              <a href="dashboard">
+              <Link to="dashboard">
                 AUTO
                 {/* <img
                   src={
@@ -200,7 +200,7 @@ class NavbarMenu extends React.Component {
                   alt="Lucid Logo"
                   className="img-responsive logo"
                 /> */}
-              </a>
+              </Link>
             </div>
 
             <div className="navbar-right">
@@ -218,39 +218,39 @@ class NavbarMenu extends React.Component {
               <div id="navbar-menu">
                 <ul className="nav navbar-nav">
                   <li>
-                    <a
-                      href="filedocuments"
+                    <Link
+                      to="filedocuments"
                       className="icon-menu d-none d-sm-block d-md-none d-lg-block"
                     >
                       <i className="fa fa-folder-open-o"></i>
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="appcalendar"
+                    <Link
+                      to="appcalendar"
                       className="icon-menu d-none d-sm-block d-md-none d-lg-block"
                     >
                       <i className="icon-calendar"></i>
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="appchat" className="icon-menu d-none d-sm-block">
+                    <Link to="appchat" className="icon-menu d-none d-sm-block">
                       <i className="icon-bubbles"></i>
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="appinbox" className="icon-menu d-none d-sm-block">
+                    <Link to="appinbox" className="icon-menu d-none d-sm-block">
                       <i className="icon-envelope"></i>
                       <span className="notification-dot"></span>
-                    </a>
+                    </Link>
                   </li>
                   <li
                     className={
                       toggleNotification ? "show dropdown" : "dropdown"
                     }
                   >
-                    <a
-                      href="#!"
+                    <Link
+                      to="#!"
                       className="dropdown-toggle icon-menu"
                       data-toggle="dropdown"
                       onClick={(e) => {
@@ -260,7 +260,7 @@ class NavbarMenu extends React.Component {
                     >
                       <i className="icon-bell"></i>
                       <span className="notification-dot"></span>
-                    </a>
+                    </Link>
                     <ul
                       className={
                         toggleNotification
@@ -272,7 +272,7 @@ class NavbarMenu extends React.Component {
                         <strong>You have 4 new Notifications</strong>
                       </li>
                       <li>
-                        <a>
+                        <Link to=" ">
                           <div className="media">
                             <div className="media-left">
                               <i className="icon-info text-warning"></i>
@@ -285,10 +285,10 @@ class NavbarMenu extends React.Component {
                               <span className="timestamp">10:00 AM Today</span>
                             </div>
                           </div>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a>
+                        <Link to=" ">
                           <div className="media">
                             <div className="media-left">
                               <i className="icon-like text-success"></i>
@@ -301,10 +301,10 @@ class NavbarMenu extends React.Component {
                               <span className="timestamp">11:30 AM Today</span>
                             </div>
                           </div>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a>
+                        <Link to=" ">
                           <div className="media">
                             <div className="media-left">
                               <i className="icon-pie-chart text-info"></i>
@@ -317,10 +317,10 @@ class NavbarMenu extends React.Component {
                               <span className="timestamp">04:00 PM Today</span>
                             </div>
                           </div>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a>
+                        <Link to=" ">
                           <div className="media">
                             <div className="media-left">
                               <i className="icon-info text-danger"></i>
@@ -332,18 +332,20 @@ class NavbarMenu extends React.Component {
                               <span className="timestamp">Yesterday</span>
                             </div>
                           </div>
-                        </a>
+                        </Link>
                       </li>
                       <li className="footer">
-                        <a className="more">See all notifications</a>
+                        <Link to=" " className="more">
+                          See all notifications
+                        </Link>
                       </li>
                     </ul>
                   </li>
                   <li
                     className={toggleEqualizer ? "show dropdown" : "dropdown"}
                   >
-                    <a
-                      href="#!"
+                    <Link
+                      to="#!"
                       className="dropdown-toggle icon-menu"
                       data-toggle="dropdown"
                       onClick={(e) => {
@@ -352,7 +354,7 @@ class NavbarMenu extends React.Component {
                       }}
                     >
                       <i className="icon-equalizer"></i>
-                    </a>
+                    </Link>
                     <ul
                       className={
                         toggleEqualizer
@@ -362,50 +364,50 @@ class NavbarMenu extends React.Component {
                     >
                       <li className="menu-heading">ACCOUNT SETTINGS</li>
                       <li>
-                        <a>
+                        <Link to=" ">
                           <i className="icon-note"></i> <span>Basic</span>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a>
+                        <Link to=" ">
                           <i className="icon-equalizer"></i>{" "}
                           <span>Preferences</span>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a>
+                        <Link to=" ">
                           <i className="icon-lock"></i> <span>Privacy</span>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a>
+                        <Link to=" ">
                           <i className="icon-bell"></i>{" "}
                           <span>Notifications</span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="menu-heading">BILLING</li>
                       <li>
-                        <a>
+                        <Link to=" ">
                           <i className="icon-credit-card"></i>{" "}
                           <span>Payments</span>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a>
+                        <Link to=" ">
                           <i className="icon-printer"></i> <span>Invoices</span>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a>
+                        <Link to=" ">
                           <i className="icon-refresh"></i> <span>Renewals</span>
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </li>
                   <li>
-                    <a href="login" className="icon-menu">
+                    <Link to="login" className="icon-menu">
                       <i className="icon-login"></i>
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -419,7 +421,7 @@ class NavbarMenu extends React.Component {
               <img
                 src={UserImage}
                 className="rounded-circle user-photo"
-                alt="User Profile Picture"
+                alt="User Profile "
               />
               <Dropdown>
                 <span>Welcome,</span>
@@ -433,10 +435,10 @@ class NavbarMenu extends React.Component {
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu className="dropdown-menu-right account">
-                  <Dropdown.Item href="profilev2page">
+                  <Dropdown.Item to="profilev2page">
                     <i className="icon-user"></i>My Profile
                   </Dropdown.Item>
-                  <Dropdown.Item href="appinbox">
+                  <Dropdown.Item to="appinbox">
                     {" "}
                     <i className="icon-envelope-open"></i>Messages
                   </Dropdown.Item>
@@ -445,7 +447,7 @@ class NavbarMenu extends React.Component {
                     <i className="icon-settings"></i>Settings
                   </Dropdown.Item>
                   <li className="divider"></li>
-                  <Dropdown.Item href="login">
+                  <Dropdown.Item to="login">
                     {" "}
                     <i className="icon-power"></i>Logout
                   </Dropdown.Item>
@@ -469,7 +471,7 @@ class NavbarMenu extends React.Component {
             </div>
             <ul className="nav nav-tabs">
               <li className="nav-item">
-                <a
+              <Link
                   className={sideMenuTab[0] ? "nav-link active" : "nav-link"}
                   data-toggle="tab"
                   onClick={() => {
@@ -477,10 +479,10 @@ class NavbarMenu extends React.Component {
                   }}
                 >
                   Menu
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a
+                <Link
                   className={sideMenuTab[1] ? "nav-link active" : "nav-link"}
                   data-toggle="tab"
                   onClick={() => {
@@ -488,10 +490,10 @@ class NavbarMenu extends React.Component {
                   }}
                 >
                   <i className="icon-book-open"></i>
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a
+                <Link
                   className={sideMenuTab[2] ? "nav-link active" : "nav-link"}
                   data-toggle="tab"
                   onClick={() => {
@@ -499,10 +501,10 @@ class NavbarMenu extends React.Component {
                   }}
                 >
                   <i className="icon-settings"></i>
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a
+                <Link
                   className={sideMenuTab[3] ? "nav-link active" : "nav-link"}
                   data-toggle="tab"
                   onClick={() => {
@@ -510,7 +512,7 @@ class NavbarMenu extends React.Component {
                   }}
                 >
                   <i className="icon-question"></i>
-                </a>
+                </Link>
               </li>
             </ul>
             <div className="tab-content p-l-0 p-r-0">
@@ -521,8 +523,8 @@ class NavbarMenu extends React.Component {
                 <Nav id="left-sidebar-nav" className="sidebar-nav">
                   <ul id="main-menu" className="metismenu">
                     <li className="" id="dashboradContainer">
-                      <a
-                        href="#!"
+                      <Link
+                        to="#!"
                         className="has-arrow"
                         onClick={(e) => {
                           e.preventDefault();
@@ -530,7 +532,7 @@ class NavbarMenu extends React.Component {
                         }}
                       >
                         <i className="icon-home"></i> <span>Dashboard</span>
-                      </a>
+                      </Link>
                       <ul className="collapse">
                         <li
                           className={activeKey === "dashboard" ? "active" : ""}
@@ -550,8 +552,8 @@ class NavbarMenu extends React.Component {
                       </ul>
                     </li>
                     <li id="AppContainer" className="">
-                      <a
-                        href="#!"
+                      <Link
+                        to="#!"
                         className="has-arrow"
                         onClick={(e) => {
                           e.preventDefault();
@@ -559,7 +561,7 @@ class NavbarMenu extends React.Component {
                         }}
                       >
                         <i className="icon-grid"></i> <span>App</span>
-                      </a>
+                      </Link>
                       <ul className="collapse">
                         <li
                           className={activeKey === "appinbox" ? "active" : ""}
@@ -596,8 +598,8 @@ class NavbarMenu extends React.Component {
                       </ul>
                     </li>
                     <li id="FileManagerContainer" className="">
-                      <a
-                        href="#!"
+                      <Link
+                        to="#!"
                         className="has-arrow"
                         onClick={(e) => {
                           e.preventDefault();
@@ -606,7 +608,7 @@ class NavbarMenu extends React.Component {
                       >
                         <i className="icon-folder"></i>{" "}
                         <span>File Manager</span>
-                      </a>
+                      </Link>
                       <ul className="collapse">
                         <li
                           className={
@@ -639,8 +641,8 @@ class NavbarMenu extends React.Component {
                       </ul>
                     </li>
                     <li id="BlogContainer" className="">
-                      <a
-                        href="#!"
+                      <Link
+                        to="#!"
                         className="has-arrow"
                         onClick={(e) => {
                           e.preventDefault();
@@ -648,7 +650,7 @@ class NavbarMenu extends React.Component {
                         }}
                       >
                         <i className="icon-globe"></i> <span>Blog</span>
-                      </a>
+                      </Link>
                       <ul className="collapse">
                         <li
                           className={
@@ -674,8 +676,8 @@ class NavbarMenu extends React.Component {
                       </ul>
                     </li>
                     <li id="UIElementsContainer" className="">
-                      <a
-                        href="#uiElements"
+                      <Link
+                        to="#uiElements"
                         className="has-arrow"
                         onClick={(e) => {
                           e.preventDefault();
@@ -684,7 +686,7 @@ class NavbarMenu extends React.Component {
                       >
                         <i className="icon-diamond"></i>{" "}
                         <span>UI Elements</span>
-                      </a>
+                      </Link>
                       <ul className="collapse">
                         <li
                           className={
@@ -768,8 +770,8 @@ class NavbarMenu extends React.Component {
                       </ul>
                     </li>
                     <li id="WidgetsContainer" className="">
-                      <a
-                        href="#!"
+                      <Link
+                        to="#!"
                         className="has-arrow"
                         onClick={(e) => {
                           e.preventDefault();
@@ -777,7 +779,7 @@ class NavbarMenu extends React.Component {
                         }}
                       >
                         <i className="icon-puzzle"></i> <span>Widgets</span>
-                      </a>
+                      </Link>
                       <ul className="collapse">
                         <li
                           className={
@@ -816,8 +818,8 @@ class NavbarMenu extends React.Component {
                       </ul>
                     </li>
                     <li id="AuthenticationContainer" className="">
-                      <a
-                        href="#!"
+                      <Link
+                        to="#!"
                         className="has-arrow"
                         onClick={(e) => {
                           e.preventDefault();
@@ -828,7 +830,7 @@ class NavbarMenu extends React.Component {
                       >
                         <i className="icon-lock"></i>{" "}
                         <span>Authentication</span>
-                      </a>
+                      </Link>
                       <ul
                         className={
                           addClassactive[6] ? "collapse in" : "collapse"
@@ -837,48 +839,48 @@ class NavbarMenu extends React.Component {
                         <li
                           className={addClassactiveChildAuth[0] ? "active" : ""}
                         >
-                          <a href="login">Login</a>
+                          <Link to="login">Login</Link>
                         </li>
                         <li
                           className={addClassactiveChildAuth[1] ? "active" : ""}
                         >
-                          <a href="registration">Register</a>
+                          <Link to="registration">Register</Link>
                         </li>
                         <li
                           className={addClassactiveChildAuth[2] ? "active" : ""}
                         >
-                          <a href="lockscreen">Lockscreen</a>
+                          <Link to="lockscreen">Lockscreen</Link>
                         </li>
                         <li
                           className={addClassactiveChildAuth[3] ? "active" : ""}
                         >
-                          <a href="forgotpassword">Forgot Password</a>
+                          <Link to="forgotpassword">Forgot Password</Link>
                         </li>
                         <li
                           className={addClassactiveChildAuth[4] ? "active" : ""}
                         >
-                          <a href="page404">Page 404</a>
+                          <Link to="page404">Page 404</Link>
                         </li>
                         <li
                           className={addClassactiveChildAuth[5] ? "active" : ""}
                         >
-                          <a href="page403">Page 403</a>
+                          <Link to="page403">Page 403</Link>
                         </li>
                         <li
                           className={addClassactiveChildAuth[6] ? "active" : ""}
                         >
-                          <a href="page500">Page 500</a>
+                          <Link to="page500">Page 500</Link>
                         </li>
                         <li
                           className={addClassactiveChildAuth[7] ? "active" : ""}
                         >
-                          <a href="page503">Page 503</a>
+                          <Link to="page503">Page 503</Link>
                         </li>
                       </ul>
                     </li>
                     <li id="PagesContainer" className="">
-                      <a
-                        href="#!"
+                      <Link
+                        to="#!"
                         className="has-arrow"
                         onClick={(e) => {
                           e.preventDefault();
@@ -886,7 +888,7 @@ class NavbarMenu extends React.Component {
                         }}
                       >
                         <i className="icon-docs"></i> <span>Pages</span>
-                      </a>
+                      </Link>
                       <ul className="collapse">
                         <li
                           className={activeKey === "blankpage" ? "active" : ""}
@@ -1019,8 +1021,8 @@ class NavbarMenu extends React.Component {
                       </ul>
                     </li>
                     <li id="FormsContainer" className="">
-                      <a
-                        href="#!"
+                      <Link
+                        to="#!"
                         className="has-arrow"
                         onClick={(e) => {
                           e.preventDefault();
@@ -1028,7 +1030,7 @@ class NavbarMenu extends React.Component {
                         }}
                       >
                         <i className="icon-pencil"></i> <span>Forms</span>
-                      </a>
+                      </Link>
                       <ul className={"collapse"}>
                         <li
                           className={
@@ -1049,8 +1051,8 @@ class NavbarMenu extends React.Component {
                       </ul>
                     </li>
                     <li id="TablesContainer" className="">
-                      <a
-                        href="#!"
+                      <Link
+                        to="#!"
                         className="has-arrow"
                         onClick={(e) => {
                           e.preventDefault();
@@ -1058,7 +1060,7 @@ class NavbarMenu extends React.Component {
                         }}
                       >
                         <i className="icon-tag"></i> <span>Tables</span>
-                      </a>
+                      </Link>
                       <ul className="collapse">
                         <li
                           className={
@@ -1071,8 +1073,8 @@ class NavbarMenu extends React.Component {
                       </ul>
                     </li>
                     <li id="chartsContainer" className="">
-                      <a
-                        href="#!"
+                      <Link
+                        to="#!"
                         className="has-arrow"
                         onClick={(e) => {
                           e.preventDefault();
@@ -1080,7 +1082,7 @@ class NavbarMenu extends React.Component {
                         }}
                       >
                         <i className="icon-bar-chart"></i> <span>Charts</span>
-                      </a>
+                      </Link>
                       <ul className="collapse">
                         <li
                           className={activeKey === "echart" ? "active" : ""}
@@ -1091,8 +1093,8 @@ class NavbarMenu extends React.Component {
                       </ul>
                     </li>
                     <li id="MapsContainer" className="">
-                      <a
-                        href="#!"
+                      <Link
+                        to="#!"
                         className="has-arrow"
                         onClick={(e) => {
                           e.preventDefault();
@@ -1100,7 +1102,7 @@ class NavbarMenu extends React.Component {
                         }}
                       >
                         <i className="icon-map"></i> <span>Maps</span>
-                      </a>
+                      </Link>
                       <ul className="collapse">
                         <li
                           className={
@@ -1142,7 +1144,7 @@ class NavbarMenu extends React.Component {
                 </form>
                 <ul className="right_chat list-unstyled">
                   <li className="online">
-                    <a>
+                    <Link to=" ">
                       <div className="media">
                         <img className="media-object " src={Avatar4} alt="" />
                         <div className="media-body">
@@ -1151,10 +1153,10 @@ class NavbarMenu extends React.Component {
                           <span className="badge badge-outline status"></span>
                         </div>
                       </div>
-                    </a>
+                    </Link>
                   </li>
                   <li className="online">
-                    <a>
+                    <Link to=" ">
                       <div className="media">
                         <img className="media-object " src={Avatar5} alt="" />
                         <div className="media-body">
@@ -1163,10 +1165,10 @@ class NavbarMenu extends React.Component {
                           <span className="badge badge-outline status"></span>
                         </div>
                       </div>
-                    </a>
+                    </Link>
                   </li>
                   <li className="offline">
-                    <a>
+                    <Link to=" ">
                       <div className="media">
                         <img className="media-object " src={Avatar2} alt="" />
                         <div className="media-body">
@@ -1175,10 +1177,10 @@ class NavbarMenu extends React.Component {
                           <span className="badge badge-outline status"></span>
                         </div>
                       </div>
-                    </a>
+                    </Link>
                   </li>
                   <li className="offline">
-                    <a>
+                    <Link to=" ">
                       <div className="media">
                         <img className="media-object " src={Avatar1} alt="" />
                         <div className="media-body">
@@ -1189,10 +1191,10 @@ class NavbarMenu extends React.Component {
                           <span className="badge badge-outline status"></span>
                         </div>
                       </div>
-                    </a>
+                    </Link>
                   </li>
                   <li className="online">
-                    <a>
+                    <Link to=" ">
                       <div className="media">
                         <img className="media-object " src={Avatar3} alt="" />
                         <div className="media-body">
@@ -1201,7 +1203,7 @@ class NavbarMenu extends React.Component {
                           <span className="badge badge-outline status"></span>
                         </div>
                       </div>
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -1215,7 +1217,6 @@ class NavbarMenu extends React.Component {
                 }
                 id="setting"
               >
-
                 <h6>Choose Mode</h6>
                 <ul className="choose-skin list-unstyled">
                   <li
@@ -1285,7 +1286,7 @@ class NavbarMenu extends React.Component {
                   </li>
                   <li
                     data-theme="cyan"
-                    className="active"
+                    // className="active"
                     className={themeColor === "theme-cyan" ? "active" : ""}
                   >
                     <div
@@ -1346,7 +1347,6 @@ class NavbarMenu extends React.Component {
                   </li>
                 </ul>
                 <hr />
-                
               </div>
               <div
                 className={
@@ -1373,97 +1373,97 @@ class NavbarMenu extends React.Component {
                 <ul className="list-unstyled question">
                   <li className="menu-heading">HOW-TO</li>
                   <li>
-                    <a
-                      href="#!"
+                    <Link
+                      to="#!"
                       onClick={(e) => {
                         e.preventDefault();
                       }}
                     >
                       How to Create Campaign
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="#!"
+                    <Link
+                      to="#!"
                       onClick={(e) => {
                         e.preventDefault();
                       }}
                     >
                       Boost Your Sales
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="#!"
+                    <Link
+                      to="#!"
                       onClick={(e) => {
                         e.preventDefault();
                       }}
                     >
                       Website Analytics
-                    </a>
+                    </Link>
                   </li>
                   <li className="menu-heading">ACCOUNT</li>
                   <li>
-                    <a
-                      href="registration"
+                    <Link
+                      to="registration"
                       onClick={(e) => {
                         e.preventDefault();
                       }}
                     >
                       Cearet New Account
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="forgotpassword"
+                    <Link
+                      to="forgotpassword"
                       onClick={(e) => {
                         e.preventDefault();
                       }}
                     >
                       Change Password?
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="#!"
+                    <Link
+                      to="#!"
                       onClick={(e) => {
                         e.preventDefault();
                       }}
                     >
                       Privacy &amp; Policy
-                    </a>
+                    </Link>
                   </li>
                   <li className="menu-heading">BILLING</li>
                   <li>
-                    <a
-                      href="#!"
+                    <Link
+                      to="#!"
                       onClick={(e) => {
                         e.preventDefault();
                       }}
                     >
                       Payment info
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="#!"
+                    <Link
+                      to="#!"
                       onClick={(e) => {
                         e.preventDefault();
                       }}
                     >
                       Auto-Renewal
-                    </a>
+                    </Link>
                   </li>
                   <li className="menu-button m-t-30">
-                    <a
-                      href="#!"
+                    <Link
+                      to="#!"
                       className="btn btn-primary"
                       onClick={(e) => {
                         e.preventDefault();
                       }}
                     >
                       <i className="icon-question"></i> Need Help?
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>

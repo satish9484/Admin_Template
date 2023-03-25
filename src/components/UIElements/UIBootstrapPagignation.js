@@ -15,19 +15,29 @@ class UIBootstrapPagognation extends React.Component {
             <nav aria-label="Page navigation example">
               <ul className="pagination">
                 <li className="page-item">
-                  <a className="page-link">Previous</a>
+                  <a href=" " className="page-link">
+                    Previous
+                  </a>
                 </li>
                 <li className="page-item">
-                  <a className="page-link">1</a>
+                  <a href=" " className="page-link">
+                    1
+                  </a>
                 </li>
                 <li className="page-item">
-                  <a className="page-link">2</a>
+                  <a href=" " className="page-link">
+                    2
+                  </a>
                 </li>
                 <li className="page-item">
-                  <a className="page-link">3</a>
+                  <a href=" " className="page-link">
+                    3
+                  </a>
                 </li>
                 <li className="page-item">
-                  <a className="page-link">Next</a>
+                  <a href=" " className="page-link">
+                    Next
+                  </a>
                 </li>
               </ul>
             </nav>
@@ -36,22 +46,28 @@ class UIBootstrapPagognation extends React.Component {
             <nav aria-label="Page navigation example">
               <ul className="pagination">
                 <li className="page-item">
-                  <a className="page-link" aria-label="Previous">
+                  <a href=" " className="page-link" aria-label="Previous">
                     <span aria-hidden="true">&laquo;</span>
                     <span className="sr-only">Previous</span>
                   </a>
                 </li>
                 <li className="page-item">
-                  <a className="page-link">1</a>
+                  <a href=" " className="page-link">
+                    1
+                  </a>
                 </li>
                 <li className="page-item">
-                  <a className="page-link">2</a>
+                  <a href=" " className="page-link">
+                    2
+                  </a>
                 </li>
                 <li className="page-item">
-                  <a className="page-link">3</a>
+                  <a href=" " className="page-link">
+                    3
+                  </a>
                 </li>
                 <li className="page-item">
-                  <a className="page-link" aria-label="Next">
+                  <a href=" " className="page-link" aria-label="Next">
                     <span aria-hidden="true">&raquo;</span>
                     <span className="sr-only">Next</span>
                   </a>
@@ -63,21 +79,29 @@ class UIBootstrapPagognation extends React.Component {
             <nav aria-label="...">
               <ul className="pagination">
                 <li className="page-item disabled">
-                  <a className="page-link">Previous</a>
+                  <a href=" " className="page-link">
+                    Previous
+                  </a>
                 </li>
                 <li className="page-item">
-                  <a className="page-link">1</a>
+                  <a href=" " className="page-link">
+                    1
+                  </a>
                 </li>
                 <li className="page-item active">
-                  <a className="page-link">
+                  <a href=" " className="page-link">
                     2 <span className="sr-only">(current)</span>
                   </a>
                 </li>
                 <li className="page-item">
-                  <a className="page-link">3</a>
+                  <a href=" " className="page-link">
+                    3
+                  </a>
                 </li>
                 <li className="page-item">
-                  <a className="page-link">Next</a>
+                  <a href=" " className="page-link">
+                    Next
+                  </a>
                 </li>
               </ul>
             </nav>

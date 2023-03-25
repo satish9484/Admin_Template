@@ -45,6 +45,7 @@ class MailCompose extends React.Component {
                 Draft
               </button>
               <a
+                href=" "
                 className="btn btn-outline-secondary"
                 onClick={() => {
                   this.props.onPressCompose(true);

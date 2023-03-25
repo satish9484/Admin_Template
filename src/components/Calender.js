@@ -5,6 +5,7 @@ import "react-big-calendar/lib/sass/styles.scss";
 import PropTypes from "prop-types";
 import { onPressTagDropdown } from "../actions";
 
+
 class Calender extends React.Component {
   render() {
     const { localizer, allViews, ColoredDateCellWrapper } = this.props;

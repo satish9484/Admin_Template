@@ -34,7 +34,7 @@ class ProjectsListTable extends React.Component {
                   </td>
                   <td className="project-title">
                     <h6>
-                      <a>{data.details}</a>
+                      <a href=" ">{data.details}</a>
                     </h6>
                     <small>Created {data.date}</small>
                   </td>
@@ -57,10 +57,10 @@ class ProjectsListTable extends React.Component {
                     </ul>
                   </td>
                   <td className="project-actions">
-                    <a className="btn btn-outline-secondary mr-1">
+                    <a href=" " className="btn btn-outline-secondary mr-1">
                       <i className="icon-eye"></i>
                     </a>
-                    <a className="btn btn-outline-secondary">
+                    <a href=" " className="btn btn-outline-secondary">
                       <i className="icon-pencil"></i>
                     </a>
                   </td>

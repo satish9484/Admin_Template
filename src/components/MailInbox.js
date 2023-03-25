@@ -193,6 +193,7 @@ class MailInbox extends React.Component {
                         </Dropdown.Toggle>
                         <Dropdown.Menu as="div" className="dropdown-menu">
                           <a
+                            href=" "
                             href={current.href}
                             className="dropdown-item"
                             onClick={() => {
@@ -202,6 +203,7 @@ class MailInbox extends React.Component {
                             Tag 1
                           </a>
                           <a
+                            href=" "
                             href={current.href}
                             className="dropdown-item"
                             onClick={() => {
@@ -211,6 +213,7 @@ class MailInbox extends React.Component {
                             Tag 2
                           </a>
                           <a
+                            href=" "
                             href={current.href}
                             className="dropdown-item"
                             onClick={() => {
@@ -238,6 +241,7 @@ class MailInbox extends React.Component {
                         </Dropdown.Toggle>
                         <Dropdown.Menu as="div" className="dropdown-menu">
                           <a
+                            href=" "
                             href={current.href}
                             className="dropdown-item"
                             href="#!"
@@ -248,6 +252,7 @@ class MailInbox extends React.Component {
                             Mark as read
                           </a>
                           <a
+                            href=" "
                             href={current.href}
                             className="dropdown-item"
                             onClick={() => {
@@ -257,6 +262,7 @@ class MailInbox extends React.Component {
                             Mark as unread
                           </a>
                           <a
+                            href=" "
                             href={current.href}
                             className="dropdown-item"
                             onClick={() => {
@@ -273,6 +279,7 @@ class MailInbox extends React.Component {
                             }}
                           ></div>
                           <a
+                            href=" "
                             href={current.href}
                             className="dropdown-item"
                             onClick={() => {
@@ -582,18 +589,21 @@ class MailInbox extends React.Component {
                       </div>
                       <div className="btn-group">
                         <a
+                          href=" "
                           href={current.href}
                           className="btn btn-outline-secondary btn-sm hidden-sm"
                         >
                           Refresh
                         </a>
                         <a
+                          href=" "
                           href={current.href}
                           className="btn btn-outline-secondary btn-sm hidden-sm"
                         >
                           Archive
                         </a>
                         <a
+                          href=" "
                           href={current.href}
                           className="btn btn-outline-secondary btn-sm"
                         >

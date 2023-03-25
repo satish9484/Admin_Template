@@ -435,7 +435,7 @@ var base = +new Date(1968, 9, 3);
 var oneDay = 24 * 3600 * 1000;
 var date = [];
 
-var data = [Math.random() * 300];
+// var data = [Math.random() * 300];
 
 for (var i = 1; i < 20000; i++) {
   var now = new Date((base += oneDay));

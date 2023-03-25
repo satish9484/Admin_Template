@@ -66,9 +66,9 @@ class Dashbord extends React.Component {
     cardData.map((data, i) => {
       var uData = [];
       data.sparklineData.data.map((d, j) => {
-       return uData[j] = Math.floor(Math.random() * 10) + 1;
+        return (uData[j] = Math.floor(Math.random() * 10) + 1);
       });
-     return allCardData[i].sparklineData.data = [...uData];
+      return (allCardData[i].sparklineData.data = [...uData]);
     });
     this.setState({ cardData: [...allCardData] });
   }
@@ -133,13 +133,13 @@ class Dashbord extends React.Component {
                           className="dropdown-menu dropdown-menu-right"
                         >
                           <li>
-                            <a>Action</a>
+                            <a href=" ">Action</a>
                           </li>
                           <li>
-                            <a>Another Action</a>
+                            <a href=" ">Another Action</a>
                           </li>
                           <li>
-                            <a>Something else</a>
+                            <a href=" ">Something else</a>
                           </li>
                         </Dropdown.Menu>
                       </Dropdown.Toggle>
@@ -171,13 +171,13 @@ class Dashbord extends React.Component {
                           className="dropdown-menu dropdown-menu-right"
                         >
                           <li>
-                            <a>Action</a>
+                            <a href=" ">Action</a>
                           </li>
                           <li>
-                            <a>Another Action</a>
+                            <a href=" ">Another Action</a>
                           </li>
                           <li>
-                            <a>Something else</a>
+                            <a href=" ">Something else</a>
                           </li>
                         </Dropdown.Menu>
                       </Dropdown.Toggle>
@@ -239,13 +239,13 @@ class Dashbord extends React.Component {
                           className="dropdown-menu dropdown-menu-right"
                         >
                           <li>
-                            <a>Action</a>
+                            <a href=" ">Action</a>
                           </li>
                           <li>
-                            <a>Another Action</a>
+                            <a href=" ">Another Action</a>
                           </li>
                           <li>
-                            <a>Something else</a>
+                            <a href=" ">Something else</a>
                           </li>
                         </Dropdown.Menu>
                       </Dropdown.Toggle>
@@ -367,23 +367,23 @@ class Dashbord extends React.Component {
                   </div>
                   <div className="body">
                     <div className="list-group list-widget">
-                      <a className="list-group-item">
+                      <a href=" " className="list-group-item">
                         <span className="badge badge-success">654</span>
                         <i className="fa fa-envelope text-muted"></i>Inbox
                       </a>
-                      <a className="list-group-item">
+                      <a href=" " className="list-group-item">
                         <span className="badge badge-info">364</span>
                         <i className="fa fa-eye text-muted"></i> Profile visits
                       </a>
-                      <a className="list-group-item">
+                      <a href=" " className="list-group-item">
                         <span className="badge badge-warning">19</span>
                         <i className="fa fa-bookmark text-muted"></i> Bookmarks
                       </a>
-                      <a className="list-group-item">
+                      <a href=" " className="list-group-item">
                         <span className="badge badge-warning">12</span>
                         <i className="fa fa-phone text-muted"></i> Call
                       </a>
-                      <a className="list-group-item">
+                      <a href=" " className="list-group-item">
                         <span className="badge badge-danger">54</span>
                         <i className="fa fa-comments-o text-muted"></i> Messages
                       </a>
@@ -409,7 +409,7 @@ class Dashbord extends React.Component {
                         media Queries!
                       </h5>
                       <span>
-                        <a>Elisse Joson</a> San Francisco, CA
+                        <a href=" ">Elisse Joson</a> San Francisco, CA
                       </span>
                       <div className="msg">
                         <p>
@@ -418,10 +418,10 @@ class Dashbord extends React.Component {
                           the best placeholder text, and I'm the biggest
                           developer on the web card she has is the Lorem card.
                         </p>
-                        <a className="m-r-20">
+                        <a href=" " className="m-r-20">
                           <i className="icon-heart"></i> Like
                         </a>
-                        <a
+                        <a href=" "
                           role="button"
                           data-toggle="collapse"
                           aria-expanded="false"
@@ -454,7 +454,7 @@ class Dashbord extends React.Component {
                     >
                       <h5>Oeehhh, that's awesome.. Me too!</h5>
                       <span>
-                        <a title="">Katherine Lumaad</a> Oakland, CA
+                        <a href=" " title="">Katherine Lumaad</a> Oakland, CA
                       </span>
                       <div className="msg">
                         <p>
@@ -468,18 +468,18 @@ class Dashbord extends React.Component {
                           <img
                             className="w-25"
                             src={AwsomeImage}
-                            alt="Awesome Image"
+                            alt="Awesome "
                           />
                           <img
                             className="w-25"
                             src={AwsomeImageOt}
-                            alt="Awesome Image"
+                            alt="Awesome "
                           />
                         </div>
-                        <a className="m-r-20">
+                        <a href=" " className="m-r-20">
                           <i className="icon-heart"></i> Like
                         </a>
-                        <a
+                        <a href=" "
                           role="button"
                           data-toggle="collapse"
                           aria-expanded="false"
@@ -512,7 +512,7 @@ class Dashbord extends React.Component {
                         Larger Pizza
                       </h5>
                       <span>
-                        <a title="">Gary Camara</a> San Francisco, CA
+                        <a href=" " title="">Gary Camara</a> San Francisco, CA
                       </span>
                       <div className="msg">
                         <p>
@@ -522,10 +522,10 @@ class Dashbord extends React.Component {
                           developer on the web by far... While that's mock-ups
                           and this is politics, is the Lorem card.
                         </p>
-                        <a className="m-r-20">
+                        <a href=" "  className="m-r-20">
                           <i className="icon-heart"></i> Like
                         </a>
-                        <a
+                        <a href=" "
                           role="button"
                           data-toggle="collapse"
                           aria-expanded="false"

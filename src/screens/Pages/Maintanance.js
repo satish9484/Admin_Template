@@ -34,7 +34,7 @@ class Maintanance extends React.Component {
                   <i className="fa fa-arrow-left"></i>&nbsp;<span>Go Back</span>
                 </a>
                 &nbsp;
-                <a className="btn btn-info" href="dashboard">
+                <a href=" " className="btn btn-info" href="dashboard">
                   <i className="fa fa-home"></i>&nbsp;<span>Home</span>
                 </a>
               </div>

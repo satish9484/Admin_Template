@@ -63,7 +63,7 @@ class TimeLine extends React.Component {
                         media Queries!
                       </h5>
                       <span>
-                        <a>Elisse Joson</a> San Francisco, CA
+                        <a href=" ">Elisse Joson</a> San Francisco, CA
                       </span>
                       <div className="msg">
                         <p>
@@ -72,10 +72,11 @@ class TimeLine extends React.Component {
                           the best placeholder text, and I'm the biggest
                           developer on the web card she has is the Lorem card.
                         </p>
-                        <a className="m-r-20">
+                        <a href=" " className="m-r-20">
                           <i className="icon-heart"></i> Like
                         </a>
                         <a
+                          href=" "
                           onClick={() => {
                             this.onCollapse(0);
                           }}
@@ -114,7 +115,7 @@ class TimeLine extends React.Component {
                     >
                       <h5>Oeehhh, that's awesome.. Me too!</h5>
                       <span>
-                        <a>Katherine Lumaad</a> Oakland, CA
+                        <a href=" ">Katherine Lumaad</a> Oakland, CA
                       </span>
                       <div className="msg">
                         <p>
@@ -124,10 +125,11 @@ class TimeLine extends React.Component {
                           politics, are they really so different? I think the
                           only card she has is the Lorem card.
                         </p>
-                        <a className="m-r-20">
+                        <a href=" " className="m-r-20">
                           <i className="icon-heart"></i> Like
                         </a>
                         <a
+                          href=" "
                           onClick={() => {
                             this.onCollapse(1);
                           }}
@@ -166,7 +168,7 @@ class TimeLine extends React.Component {
                         Larger Pizza
                       </h5>
                       <span>
-                        <a>Gary Camara</a> San Francisco, CA
+                        <a href=" ">Gary Camara</a> San Francisco, CA
                       </span>
                       <div className="msg">
                         <p>
@@ -176,10 +178,11 @@ class TimeLine extends React.Component {
                           developer on the web by far... While that's mock-ups
                           and this is politics, is the Lorem card.
                         </p>
-                        <a className="m-r-20">
+                        <a href=" " className="m-r-20">
                           <i className="icon-heart"></i> Like
                         </a>
                         <a
+                          href=" "
                           onClick={() => {
                             this.onCollapse(2);
                           }}

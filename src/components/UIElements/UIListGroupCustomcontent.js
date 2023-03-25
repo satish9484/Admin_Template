@@ -10,7 +10,10 @@ class UIListGroupCustomcontent extends React.Component {
         </div>
         <div className="body">
           <div className="list-group">
-            <a className="list-group-item list-group-item-action flex-column align-items-start active">
+            <a
+              href=" "
+              className="list-group-item list-group-item-action flex-column align-items-start active"
+            >
               <div className="d-flex w-100 justify-content-between">
                 <h5 className="mb-1">List group item heading</h5>
                 <small>3 days ago</small>
@@ -21,7 +24,10 @@ class UIListGroupCustomcontent extends React.Component {
               </p>
               <small>Donec id elit non mi porta.</small>
             </a>
-            <a className="list-group-item list-group-item-action flex-column align-items-start">
+            <a
+              href=" "
+              className="list-group-item list-group-item-action flex-column align-items-start"
+            >
               <div className="d-flex w-100 justify-content-between">
                 <h5 className="mb-1">List group item heading</h5>
                 <small className="text-muted">3 days ago</small>
@@ -32,7 +38,10 @@ class UIListGroupCustomcontent extends React.Component {
               </p>
               <small className="text-muted">Donec id elit non mi porta.</small>
             </a>
-            <a className="list-group-item list-group-item-action flex-column align-items-start">
+            <a
+              href=" "
+              className="list-group-item list-group-item-action flex-column align-items-start"
+            >
               <div className="d-flex w-100 justify-content-between">
                 <h5 className="mb-1">List group item heading</h5>
                 <small className="text-muted">3 days ago</small>

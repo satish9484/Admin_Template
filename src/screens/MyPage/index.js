@@ -30,7 +30,6 @@ const index = (props) => {
                 HeaderText="Dashboard"
                 Breadcrumb={[{ name: "MyPage" }]}
               />
-
               <UsedCar />
             </div>
           </div>

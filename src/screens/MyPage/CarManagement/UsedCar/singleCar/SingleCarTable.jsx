@@ -1,7 +1,7 @@
 import React from "react";
 import { Table, Typography } from "antd";
 import { EditOutlined, DeleteOutlined, EyeOutlined } from "@ant-design/icons";
-import CustomModal from "../../../../../components/common/Modal";
+// import CustomModal from "../../../../../components/common/Modal";
 
 import "../../CarManagement.scss";
 
@@ -209,9 +209,9 @@ const SingleCarTable = () => {
         }}
       />
 
-      <CustomModal open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+      {/* <CustomModal open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
         <p>Are you sure you want to delete?</p>
-      </CustomModal>
+      </CustomModal> */}
     </>
   );
 };

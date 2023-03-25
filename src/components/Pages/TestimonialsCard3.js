@@ -31,7 +31,7 @@ class TestimonialsCard3 extends React.Component {
                       <h6>Zahed Kamal</h6>
                       <span>Front End Developer</span>
                       <p>
-                        <a>Touch Base Inc</a>
+                        <a href=" ">Touch Base Inc</a>
                       </p>
                     </div>
                   </div>
@@ -56,7 +56,7 @@ class TestimonialsCard3 extends React.Component {
                       <h6>Gary Camara</h6>
                       <span>Web Designer</span>
                       <p>
-                        <a>Wraptech Inc</a>
+                        <a href=" ">Wraptech Inc</a>
                       </p>
                     </div>
                   </div>
@@ -84,7 +84,7 @@ class TestimonialsCard3 extends React.Component {
                       <h6>Zahed Kamal</h6>
                       <span>Front End Developer</span>
                       <p>
-                        <a>Touch Base Inc</a>
+                        <a href=" ">Touch Base Inc</a>
                       </p>
                     </div>
                   </div>
@@ -109,7 +109,7 @@ class TestimonialsCard3 extends React.Component {
                       <h6>Gary Camara</h6>
                       <span>Web Designer</span>
                       <p>
-                        <a>Wraptech Inc</a>
+                        <a href=" ">Wraptech Inc</a>
                       </p>
                     </div>
                   </div>
@@ -134,7 +134,7 @@ class TestimonialsCard3 extends React.Component {
                       <h6>Frank Camly</h6>
                       <span>Angular Developer</span>
                       <p>
-                        <a>ABC Base Inc</a>
+                        <a href=" ">ABC Base Inc</a>
                       </p>
                     </div>
                   </div>
@@ -159,7 +159,7 @@ class TestimonialsCard3 extends React.Component {
                       <h6>Gary Camara</h6>
                       <span>ASP MVC</span>
                       <p>
-                        <a>ThemeTech Inc</a>
+                        <a href=" ">ThemeTech Inc</a>
                       </p>
                     </div>
                   </div>

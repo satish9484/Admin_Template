@@ -22,13 +22,13 @@ class MarginPaddingSpaces extends React.Component {
                   className="dropdown-menu dropdown-menu-right"
                 >
                   <li>
-                    <a>Action</a>
+                    <a href=" ">Action</a>
                   </li>
                   <li>
-                    <a>Another Action</a>
+                    <a href=" ">Another Action</a>
                   </li>
                   <li>
-                    <a>Something else</a>
+                    <a href=" ">Something else</a>
                   </li>
                 </Dropdown.Menu>
               </Dropdown.Toggle>

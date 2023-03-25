@@ -15,7 +15,7 @@ class FileDocumentCard extends React.Component {
       <div className="col-lg-3 col-md-4 col-sm-12">
         <div className="card">
           <div className="file">
-            <a>
+            <a href=" ">
               <div className="hover">
                 <button type="button" className="btn btn-icon btn-danger">
                   <i className="fa fa-trash"></i>

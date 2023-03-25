@@ -49,12 +49,12 @@ class ProfileV1Page extends React.Component {
                               <em className="text-muted">
                                 Autopay on May 12, 2018
                               </em>
-                              <a className="edit-payment-info">
+                              <a href=" " className="edit-payment-info">
                                 Edit Payment Info
                               </a>
                             </div>
                             <p className="margin-top-30">
-                              <a>
+                              <a href=" ">
                                 <i className="fa fa-plus-circle"></i> Add
                                 Payment Info
                               </a>
@@ -86,7 +86,7 @@ class ProfileV1Page extends React.Component {
                                   </td>
                                   <td className="amount">$29</td>
                                   <td className="action">
-                                    <a>View</a>
+                                    <a href=" ">View</a>
                                   </td>
                                 </tr>
                                 <tr>
@@ -103,7 +103,7 @@ class ProfileV1Page extends React.Component {
                                   </td>
                                   <td className="amount">$59</td>
                                   <td className="action">
-                                    <a>View</a>
+                                    <a href=" ">View</a>
                                   </td>
                                 </tr>
                                 <tr>
@@ -120,7 +120,7 @@ class ProfileV1Page extends React.Component {
                                   </td>
                                   <td className="amount">$89</td>
                                   <td className="action">
-                                    <a>View</a>
+                                    <a href=" ">View</a>
                                   </td>
                                 </tr>
                               </tbody>
@@ -215,8 +215,8 @@ class ProfileV1Page extends React.Component {
                                     <div className="connection-info">
                                       <h3 className="app-title">FaceBook</h3>
                                       <span className="actions">
-                                        <a>View Permissions</a>{" "}
-                                        <a className="text-danger">
+                                        <a href=" ">View Permissions</a>{" "}
+                                        <a href=" " className="text-danger">
                                           Revoke Access
                                         </a>
                                       </span>
@@ -229,8 +229,8 @@ class ProfileV1Page extends React.Component {
                                     <div className="connection-info">
                                       <h3 className="app-title">Twitter</h3>
                                       <span className="actions">
-                                        <a>View Permissions</a>{" "}
-                                        <a className="text-danger">
+                                        <a href=" ">View Permissions</a>{" "}
+                                        <a href=" " className="text-danger">
                                           Revoke Access
                                         </a>
                                       </span>
@@ -243,8 +243,8 @@ class ProfileV1Page extends React.Component {
                                     <div className="connection-info">
                                       <h3 className="app-title">Instagram</h3>
                                       <span className="actions">
-                                        <a>View Permissions</a>{" "}
-                                        <a className="text-danger">
+                                        <a href=" ">View Permissions</a>{" "}
+                                        <a href=" " className="text-danger">
                                           Revoke Access
                                         </a>
                                       </span>
@@ -257,8 +257,8 @@ class ProfileV1Page extends React.Component {
                                     <div className="connection-info">
                                       <h3 className="app-title">Linkedin</h3>
                                       <span className="actions">
-                                        <a>View Permissions</a>{" "}
-                                        <a className="text-danger">
+                                        <a href=" ">View Permissions</a>{" "}
+                                        <a href=" " className="text-danger">
                                           Revoke Access
                                         </a>
                                       </span>
@@ -271,8 +271,8 @@ class ProfileV1Page extends React.Component {
                                     <div className="connection-info">
                                       <h3 className="app-title">Vimeo</h3>
                                       <span className="actions">
-                                        <a>View Permissions</a>{" "}
-                                        <a className="text-danger">
+                                        <a href=" ">View Permissions</a>{" "}
+                                        <a href=" " className="text-danger">
                                           Revoke Access
                                         </a>
                                       </span>

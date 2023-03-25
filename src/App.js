@@ -19,7 +19,7 @@ import uitabs from "./screens/UIElements/Tabs";
 import uibuttons from "./screens/UIElements/Button";
 import bootstrapui from "./screens/UIElements/BootstrapUI";
 import uiicons from "./screens/UIElements/Icons";
-import uinotifications from "./screens/UIElements/Notifications";
+
 import uicolors from "./screens/UIElements/Colors";
 import uilistgroup from "./screens/UIElements/ListGroup";
 import uimediaobject from "./screens/UIElements/MediaObject";
@@ -232,11 +232,7 @@ class App extends React.Component {
                   path={`${process.env.PUBLIC_URL}/uiicons`}
                   component={uiicons}
                 />
-                <Route
-                  exact
-                  path={`${process.env.PUBLIC_URL}/uinotifications`}
-                  component={uinotifications}
-                />
+
                 <Route
                   exact
                   path={`${process.env.PUBLIC_URL}/uicolors`}

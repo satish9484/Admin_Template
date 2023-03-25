@@ -14,7 +14,7 @@ class UIMediaObjectAlignment extends React.Component {
               <div className="media">
                 <div className="media-left">
                   {" "}
-                  <a>
+                  <a href=" ">
                     {" "}
                     <img
                       alt=""
@@ -46,7 +46,7 @@ class UIMediaObjectAlignment extends React.Component {
               <div className="media">
                 <div className="media-left media-middle">
                   {" "}
-                  <a>
+                  <a href=" ">
                     {" "}
                     <img
                       alt=""
@@ -78,7 +78,7 @@ class UIMediaObjectAlignment extends React.Component {
               <div className="media">
                 <div className="media-left media-bottom">
                   {" "}
-                  <a>
+                  <a href=" ">
                     {" "}
                     <img
                       alt=""

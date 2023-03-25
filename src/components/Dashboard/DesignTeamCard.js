@@ -24,13 +24,13 @@ class DesignTeamCard extends React.Component {
 
             <Dropdown.Menu as="ul">
               <li>
-                <a>Action</a>
+                <a href=" ">Action</a>
               </li>
               <li>
-                <a>Another action</a>
+                <a href=" ">Another action</a>
               </li>
               <li>
-                <a>Something else</a>
+                <a href=" ">Something else</a>
               </li>
             </Dropdown.Menu>
           </Dropdown>

@@ -21,28 +21,21 @@ const UsedCar = (props) => {
   return (
     <>
       <div
+        style={{ flex: 1 }}
         onClick={() => {
           document.body.classList.remove("offcanvas-active");
         }}
       >
         <div>
           <div className="container-fluid">
+           
             <div className="row clearfix">
-              <div className="col-lg-12">
-                <div className="card">
-                  <div className="header">
-                    <h2>Lucid Activities</h2>
-                  </div>
-                  <div className="body">
-                    <Tabs
-                      onChange={onChange}
-                      size="middle"
-                      activeKey={currentTab}
-                      items={tabNames}
-                    />
-                  </div>
-                </div>
-              </div>
+              <Tabs
+                onChange={onChange}
+                size="middle"
+                activeKey={currentTab}
+                items={tabNames}
+              />
             </div>
           </div>
         </div>

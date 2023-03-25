@@ -31,7 +31,7 @@ class FollowersCard extends React.Component {
           </form>
           <ul className="right_chat list-unstyled">
             <li className="online">
-              <a>
+              <a href=" ">
                 <div className="media">
                   <img className="media-object " src={Avatar4} alt="" />
                   <div className="media-body">
@@ -43,7 +43,7 @@ class FollowersCard extends React.Component {
               </a>
             </li>
             <li className="online">
-              <a>
+              <a href=" ">
                 <div className="media">
                   <img className="media-object " src={Avatar5} alt="" />
                   <div className="media-body">
@@ -55,7 +55,7 @@ class FollowersCard extends React.Component {
               </a>
             </li>
             <li className="offline">
-              <a>
+              <a href=" ">
                 <div className="media">
                   <img className="media-object " src={Avatar2} alt="" />
                   <div className="media-body">
@@ -67,7 +67,7 @@ class FollowersCard extends React.Component {
               </a>
             </li>
             <li className="offline">
-              <a>
+              <a href=" ">
                 <div className="media">
                   <img className="media-object " src={Avatar1} alt="" />
                   <div className="media-body">
@@ -79,7 +79,7 @@ class FollowersCard extends React.Component {
               </a>
             </li>
             <li className="online">
-              <a>
+              <a href=" ">
                 <div className="media">
                   <img className="media-object " src={Avatar3} alt="" />
                   <div className="media-body">
