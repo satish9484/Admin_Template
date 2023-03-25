@@ -6,7 +6,7 @@ import CustomModal from "../../../../../components/common/Modal";
 import "../../CarManagement.scss";
 
 import { useState } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 let data = [];
 

@@ -30,6 +30,7 @@ class NavbarMenu extends React.Component {
     linkupdate: false,
   };
   componentDidMount() {
+    document.body.classList.add("full-dark");
     this.props.tostMessageLoad(true);
     // var res = window.location.pathname;
     // res = res.split("/");
@@ -189,7 +190,6 @@ class NavbarMenu extends React.Component {
 
             <div className="navbar-brand">
               <a href="dashboard">
-
                 AUTO
                 {/* <img
                   src={
@@ -1205,6 +1205,8 @@ class NavbarMenu extends React.Component {
                   </li>
                 </ul>
               </div>
+
+              {/* Seeting Silder */}
               <div
                 className={
                   sideMenuTab[2]
@@ -1213,6 +1215,7 @@ class NavbarMenu extends React.Component {
                 }
                 id="setting"
               >
+
                 <h6>Choose Mode</h6>
                 <ul className="choose-skin list-unstyled">
                   <li
@@ -1246,6 +1249,7 @@ class NavbarMenu extends React.Component {
                     <span>Dark</span>
                   </li>
                 </ul>
+
                 <hr />
                 <h6>Choose Skin</h6>
                 <ul className="choose-skin list-unstyled">
@@ -1342,45 +1346,7 @@ class NavbarMenu extends React.Component {
                   </li>
                 </ul>
                 <hr />
-                <h6>General Settings</h6>
-                <ul className="setting-list list-unstyled">
-                  <li>
-                    <label className="fancy-checkbox">
-                      <input type="checkbox" name="checkbox" />
-                      <span>Report Panel Usag</span>
-                    </label>
-                  </li>
-                  <li>
-                    <label className="fancy-checkbox">
-                      <input type="checkbox" name="checkbox" />
-                      <span>Email Redirect</span>
-                    </label>
-                  </li>
-                  <li>
-                    <label className="fancy-checkbox">
-                      <input type="checkbox" name="checkbox" />
-                      <span>Notifications</span>
-                    </label>
-                  </li>
-                  <li>
-                    <label className="fancy-checkbox">
-                      <input type="checkbox" name="checkbox" />
-                      <span>Auto Updates</span>
-                    </label>
-                  </li>
-                  <li>
-                    <label className="fancy-checkbox">
-                      <input type="checkbox" name="checkbox" />
-                      <span>Offline</span>
-                    </label>
-                  </li>
-                  <li>
-                    <label className="fancy-checkbox">
-                      <input type="checkbox" name="checkbox" />
-                      <span>Location Permission</span>
-                    </label>
-                  </li>
-                </ul>
+                
               </div>
               <div
                 className={

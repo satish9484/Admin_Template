@@ -17,11 +17,10 @@ import UIElementsReducer from "../reducers/UIElementsReducer";
 
 import AuthSlice from "./AuthSlice";
 
-// export const store = createStore(reducers, applyMiddleware(thunk));
+import reduxApiMiddleware from "./Middleware/index";
 
 export const history = createBrowserHistory();
 
-// combineReducers will be handled internally by configureStore
 const rootReducer = (history) => ({
   loginReducer: loginReducer,
   navigationReducer: navigationReducer,
@@ -34,18 +33,11 @@ const rootReducer = (history) => ({
   router: connectRouter(history),
 });
 
-// export const store = configureStore({
-//     reducer: {
-//         auth: AuthSlice,
-//         user: UserSlice,
-//     },
-//     middleware: [thunk, reduxApiMiddleware]
-// })
 
 const preloadedState = {};
 export const store = configureStore({
   reducer: rootReducer(history),
 
-  middleware: [thunk, routerMiddleware(history)],
+  middleware: [thunk, reduxApiMiddleware, routerMiddleware(history)],
   preloadedState,
 });

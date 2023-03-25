@@ -7,7 +7,6 @@ import {
 import PropTypes from "prop-types";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Logo from "../assets/images/logo-white.svg";
-// import { updateEmail, updatePassword, onLoggedin } from "../actions";
 
 import { userInfo } from "../redux/AuthSlice";
 import { Button } from "antd";
@@ -81,7 +80,7 @@ export const Login = () => {
                 <div className="body">
                   <div className="form-auth-small" action="index.html">
                     <div className="form-group">
-                      <label className="control-label sr-only">Email</label>
+                      <label htmlFor="email" className="control-label sr-only">Email</label>
                       <input
                         className="form-control"
                         id="signin-email"
@@ -89,13 +88,11 @@ export const Login = () => {
                         type="email"
                         name="email"
                         value={userCred.email}
-                        // value="user@thememakker.com"
-
                         onChange={handleChange}
                       />
                     </div>
                     <div className="form-group">
-                      <label className="control-label sr-only">Password</label>
+                      <label htmlFor="password" className="control-label sr-only">Password</label>
                       <input
                         className="form-control"
                         id="signin-password"
@@ -112,7 +109,7 @@ export const Login = () => {
                         <span>Remember me</span>
                       </label>
                     </div>
-                    <a href="#/">
+                    <a href="/">
                       <Button
                         className="btn btn-primary btn-lg btn-block"
                         type="default"
@@ -142,4 +139,10 @@ export const Login = () => {
       </div>
     </div>
   );
+};
+
+Login.propTypes = {
+  userInfo: PropTypes.func.isRequired,
+  email: PropTypes.string.isRequired,
+  password: PropTypes.string.isRequired,
 };

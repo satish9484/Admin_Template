@@ -1,23 +1,19 @@
 import React from "react";
 import { connect } from "react-redux";
 import { Route, Switch, withRouter } from "react-router-dom";
-import {Login} from "./screens/Login";
+
+import { Login } from "./screens/Login";
+
 import dashboard from "./screens/Dashbord/Dashbord";
-import demographic from "./screens/Dashbord/Demographic";
-import ioT from "./screens/Dashbord/IoT";
+
 import NavbarMenu from "./components/NavbarMenu";
+
 import appInbox from "./screens/App/Inbox";
 import appChat from "./screens/App/Chat";
 import appCalendar from "./screens/App/Calendar";
 import appContact from "./screens/App/Contact";
 import appTaskbar from "./screens/App/Taskbar";
-import filemanagerdashboard from "./screens/FileManager/Dashboard";
-import filedocuments from "./screens/FileManager/Documents";
-import filemedia from "./screens/FileManager/Media";
-import fileimages from "./screens/FileManager/Images";
-import blognewPost from "./screens/Blog/NewPost";
-import blogdetails from "./screens/Blog/BlogDetails";
-import bloglist from "./screens/Blog/BlogList";
+
 import uitypography from "./screens/UIElements/Typography";
 import uitabs from "./screens/UIElements/Tabs";
 import uibuttons from "./screens/UIElements/Button";
@@ -29,10 +25,7 @@ import uilistgroup from "./screens/UIElements/ListGroup";
 import uimediaobject from "./screens/UIElements/MediaObject";
 import uimodal from "./screens/UIElements/Modals";
 import uiprogressbar from "./screens/UIElements/ProgressBar";
-import widgetsdata from "./screens/Widgets/Data";
-import widgetsweather from "./screens/Widgets/Weather";
-import widgetsblog from "./screens/Widgets/Blog";
-import widgetsecommers from "./screens/Widgets/ECommers";
+
 import registration from "./screens/Auth/Registration";
 import lockscreen from "./screens/Auth/Lockscreen";
 import forgotpassword from "./screens/Auth/ForgotPassword";
@@ -40,6 +33,7 @@ import page404 from "./screens/Auth/Page404";
 import page403 from "./screens/Auth/Page403";
 import page500 from "./screens/Auth/Page500";
 import page503 from "./screens/Auth/Page503";
+
 import blankpage from "./screens/Pages/BlankPage";
 import profilev1page from "./screens/Pages/ProfileV1";
 import profilev2page from "./screens/Pages/ProfileV2";
@@ -55,11 +49,10 @@ import projectslist from "./screens/Pages/ProjectsList";
 import maintanance from "./screens/Pages/Maintanance";
 import testimonials from "./screens/Pages/Testimonials";
 import faqs from "./screens/Pages/Faqs";
+
 import formvalidation from "./screens/Forms/FormValidation";
 import basicelements from "./screens/Forms/BasicElements";
 import tablenormal from "./screens/Tables/TableNormal";
-import echart from "./screens/Charts/Echart";
-import leafletmap from "./screens/Maps/GoogleMaps";
 
 import MyPage from "./screens/MyPage/index";
 
@@ -83,9 +76,9 @@ class App extends React.Component {
     var baseUrl = process.env.PUBLIC_URL;
     baseUrl = baseUrl.split("/");
     res = res.split("/");
-   
+
     res = res.length > 0 ? res[baseUrl.length] : "/";
-   
+
     res = res ? res : "/";
     const activeKey1 = res;
 
@@ -192,16 +185,7 @@ class App extends React.Component {
                   path={`${process.env.PUBLIC_URL}/dashboard`}
                   component={dashboard}
                 />
-                <Route
-                  exact
-                  path={`${process.env.PUBLIC_URL}/demographic`}
-                  component={demographic}
-                />
-                <Route
-                  exact
-                  path={`${process.env.PUBLIC_URL}/ioT`}
-                  component={ioT}
-                />
+
                 <Route
                   exact
                   path={`${process.env.PUBLIC_URL}/appinbox`}
@@ -227,41 +211,7 @@ class App extends React.Component {
                   path={`${process.env.PUBLIC_URL}/apptaskbar`}
                   component={appTaskbar}
                 />
-                <Route
-                  exact
-                  path={`${process.env.PUBLIC_URL}/filemanagerdashboard`}
-                  component={filemanagerdashboard}
-                />
-                <Route
-                  exact
-                  path={`${process.env.PUBLIC_URL}/filedocuments`}
-                  component={filedocuments}
-                />
-                <Route
-                  exact
-                  path={`${process.env.PUBLIC_URL}/filemedia`}
-                  component={filemedia}
-                />
-                <Route
-                  exact
-                  path={`${process.env.PUBLIC_URL}/fileimages`}
-                  component={fileimages}
-                />
-                <Route
-                  exact
-                  path={`${process.env.PUBLIC_URL}/blognewpost`}
-                  component={blognewPost}
-                />
-                <Route
-                  exact
-                  path={`${process.env.PUBLIC_URL}/blogdetails`}
-                  component={blogdetails}
-                />
-                <Route
-                  exact
-                  path={`${process.env.PUBLIC_URL}/bloglist`}
-                  component={bloglist}
-                />
+
                 <Route
                   exact
                   path={`${process.env.PUBLIC_URL}/uitypography`}
@@ -317,26 +267,7 @@ class App extends React.Component {
                   path={`${process.env.PUBLIC_URL}/uiprogressbar`}
                   component={uiprogressbar}
                 />
-                <Route
-                  exact
-                  path={`${process.env.PUBLIC_URL}/widgetsdata`}
-                  component={widgetsdata}
-                />
-                <Route
-                  exact
-                  path={`${process.env.PUBLIC_URL}/widgetsweather`}
-                  component={widgetsweather}
-                />
-                <Route
-                  exact
-                  path={`${process.env.PUBLIC_URL}/widgetsblog`}
-                  component={widgetsblog}
-                />
-                <Route
-                  exact
-                  path={`${process.env.PUBLIC_URL}/widgetsecommers`}
-                  component={widgetsecommers}
-                />
+
                 <Route
                   exact
                   path={`${process.env.PUBLIC_URL}/blankpage`}
@@ -421,16 +352,6 @@ class App extends React.Component {
                   exact
                   path={`${process.env.PUBLIC_URL}/tablenormal`}
                   component={tablenormal}
-                />
-                <Route
-                  exact
-                  path={`${process.env.PUBLIC_URL}/echart`}
-                  component={echart}
-                />
-                <Route
-                  exact
-                  path={`${process.env.PUBLIC_URL}/leafletmap`}
-                  component={leafletmap}
                 />
               </Switch>
             </div>
