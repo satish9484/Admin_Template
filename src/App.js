@@ -56,11 +56,9 @@ import tablenormal from "./screens/Tables/TableNormal";
 
 import MyPage from "./screens/MyPage/index";
 
-import UsedCar from "./screens/MyPage/CarManagement/UsedCar";
-
-import SingleCar from "./screens/MyPage/CarManagement/UsedCar/singleCar/index";
-import EditSingleCar from "./screens/MyPage/CarManagement/UsedCar/singleCar/edit/index";
-import ViewSignleCar from "./screens/MyPage/CarManagement/UsedCar/singleCar/view/index";
+import SingleCar from "./screens/MyPage/CarManagement/singleCar/index";
+import EditSingleCar from "./screens/MyPage/CarManagement/singleCar/edit/index";
+import ViewSignleCar from "./screens/MyPage/CarManagement/singleCar/view/index";
 
 window.__DEV__ = true;
 
@@ -163,12 +161,7 @@ class App extends React.Component {
                 />
 
                 <Route
-                  path={`${process.env.PUBLIC_URL}/usedCar`}
-                  component={UsedCar}
-                />
-
-                <Route
-                  path={`${process.env.PUBLIC_URL}singleCar`}
+                  path={`${process.env.PUBLIC_URL}/singleCar`}
                   component={SingleCar}
                 />
                 <Route

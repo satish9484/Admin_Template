@@ -33,7 +33,7 @@ class Page404 extends React.Component {
                   <div className="body">
                     <p>
                       The page you were looking for could not be found, please{" "}
-                      <a>contact us</a> to report this issue.
+                       <a a href=" ">contact us</a> to report this issue.
                     </p>
                     <div className="margin-top-30">
                       <a
@@ -47,7 +47,7 @@ class Page404 extends React.Component {
                         <span>Go Back</span>
                       </a>
                       &nbsp;
-                      <a href=" " className="btn btn-primary" href="dashboard">
+                      <a className="btn btn-primary" href="dashboard">
                         <i className="fa fa-home"></i>&nbsp;<span>Home</span>
                       </a>
                     </div>

@@ -1,10 +1,14 @@
 .form-group {
+
+  .ant-form-item-label > label{
+    color: white;
+  }
   // Controls Input Field For Text
   .ant-input {
     background: $white;
     border: 1px solid $placeholder-color;
     // @include prefix(box-shadow, 0px 4px 12px rgba(18, 42, 70, 0.31));
-    border-radius: 10px;
+    border-radius: 15px;
     min-height: 45px;
     padding: 5px 10px;
   }
@@ -14,7 +18,7 @@
     background: $white;
     border: 1px solid $placeholder-color;
     // @include prefix(box-shadow, 0px 4px 12px rgba(18, 42, 70, 0.31));
-    border-radius: 10px;
+    border-radius: 15px;
     height: 45px;
     padding: 5px 10px;
   }
@@ -31,7 +35,7 @@
   // 	align-items: center;
   // 	border: 1px solid $placeholder-color;
   // 	// @include prefix(box-shadow, 0px 4px 12px rgba(18, 42, 70, 0.31));
-  // 	border-radius: 10px;
+  // 	border-radius: 15px;
   // 	padding: 5px 40px 5px 20px;
   // }
   // .ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector {
@@ -42,7 +46,7 @@
     background: $white;
     border: 1px solid $placeholder-color;
     // @include prefix(box-shadow, 0px 4px 12px rgba(18, 42, 70, 0.31));
-    border-radius: 10px;
+    border-radius: 15px;
     min-height: 45px;
     padding: 5px 20px;
     width: 100%;
@@ -99,7 +103,7 @@
 
 .searchGrp {
   .ant-input {
-    border-radius: 10px;
+    border-radius: 15px;
     color: rgba($color: $black, $alpha: 0.85);
   }
   .ant-input-search .ant-input:hover {
@@ -112,7 +116,7 @@
     box-shadow: 0 0 0 2px rgba($color: $theme-color, $alpha: 0.2);
   }
   .ant-input-group-addon {
-    border-radius: 10px;
+    border-radius: 15px;
   }
   .ant-input-search
     > .ant-input-group

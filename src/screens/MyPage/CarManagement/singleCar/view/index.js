@@ -4,8 +4,8 @@ import React from "react";
 import { Button } from "antd";
 import { Link } from "react-router-dom";
 
-import LogoiCON from "../../../../../../assets/images/logo-icon.svg";
-import PageHeader from "../../../../../../components/PageHeader";
+import LogoiCON from "../../../../../assets/images/logo-icon.svg";
+import PageHeader from "../../../../../components/PageHeader";
 
 const data = {
   number: "768",
@@ -44,11 +44,10 @@ const ViewSignleCar = (props) => {
           <div>
             <div className="container-fluid">
               <PageHeader
-                HeaderText="Used Car"
+                HeaderText="My Page"
                 Breadcrumb={[
-                  { name: "Used Car" },
-                  { name: "Single Car" },
-                  { name: "View Car Details" },
+                  { name: "My Page", navigate: "mypage" },
+                  { name: "View Details" },
                 ]}
               />
 
@@ -69,7 +68,7 @@ const ViewSignleCar = (props) => {
                       );
                     })}
                     <Button className="back-button">
-                      <Link to="/usedCar">Back</Link>
+                      <Link to="/mypage">Back</Link>
                     </Button>
                   </div>
                 </div>

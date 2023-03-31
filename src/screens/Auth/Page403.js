@@ -44,7 +44,7 @@ class Page403 extends React.Component {
                         <span>Go Back</span>
                       </a>
                       &nbsp;
-                      <a href=" " className="btn btn-primary" href="dashboard">
+                      <a  className="btn btn-primary" href="dashboard">
                         <i className="fa fa-home"></i>&nbsp;<span>Home</span>
                       </a>
                     </div>

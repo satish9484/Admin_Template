@@ -1,11 +1,16 @@
-import React from "react";
-import { Table, Typography } from "antd";
-import { EditOutlined, DeleteOutlined, EyeOutlined } from "@ant-design/icons";
+import React, { useState } from "react";
+import { Button, Table, Typography } from "antd";
+import {
+  EditOutlined,
+  CopyOutlined,
+  EyeOutlined,
+  CopyFilled,
+} from "@ant-design/icons";
 // import CustomModal from "../../../../../components/common/Modal";
 
-import "../../CarManagement.scss";
+import "../../";
 
-import { useState } from "react";
+import CopyToClipboard from "react-copy-to-clipboard";
 // import { Link } from "react-router-dom";
 
 let data = [];
@@ -26,40 +31,66 @@ for (let i = 0; i < 50; i++) {
     status: aa[Math.floor(Math.random() * aa.length)],
     type: "Vehicle",
     sellingPrice: "$2.5M",
+    copyId: `You have copied the ${i + 1}-row id. `,
+    copyIdSatus: false,
   });
 }
 
 const SingleCarTable = () => {
- 
+  const [copied, setCopied] = React.useState(false);
 
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const showModal = () => {
-    setIsModalOpen(true);
+  const [previousRecord, setPreviousRecord] = useState({});
+
+  const onCopy = (text) => {
+    console.log("Copy Value", text);
+    setCopied(true);
   };
-  const handleOk = () => {
-    setIsModalOpen(false);
-  };
-  const handleCancel = () => {
-    setIsModalOpen(false);
-  };
+
   // Edit Row Data
   const editRow = (record) => {
     console.log("Edit Row", record);
-    // navigate(`/usedCar/singleCar/edit`);
-    // <Redirect to="/usedCar/singleCar/edit" />
-
   };
 
   // View Row Data
   const viewRow = (record) => {
     console.log("From viewRow", record);
+
     // navigate(`/usedCar/singleCar/view`);
   };
 
-  // delete Row Data
-  // const deleteRow = (record) => {
-  //   console.log("From deleteRow", record);
-  // };
+  const handleCopyRecord = (record) => {
+    console.log("handleCopyRecord");
+
+    if (record.copyIdSatus) {
+      data[record.key - 1].copyIdSatus = false;
+      console.log(data[record.key - 1].copyIdSatus);
+      setPreviousRecord({});
+    }
+  };
+
+  const handleUnCopyRecord = (record) => {
+    console.log("handleUnCopyRecord");
+
+    if (
+      Object.keys(previousRecord).length > 0 &&
+      previousRecord !== null &&
+      previousRecord !== undefined
+    ) {
+      data[previousRecord.key - 1].copyIdSatus = false;
+      console.log(data[previousRecord.key - 1].copyIdSatus);
+
+      data[record.key - 1].copyIdSatus = true;
+      console.log(data[record.key - 1].copyIdSatus);
+
+      setPreviousRecord(record);
+    } else {
+      data[record.key - 1].copyIdSatus = true;
+      console.log(data[record.key - 1].copyIdSatus);
+      setPreviousRecord(record);
+    }
+  };
+
+  console.log("Set Previous Record", previousRecord);
 
   // Table Columns
   const columns = [
@@ -115,7 +146,7 @@ const SingleCarTable = () => {
     {
       title: "Status",
       key: "status",
-      // width: "150px",
+      width: "120px",
       dataIndex: "status",
       render: (_, { status }) => {
         return status.toUpperCase() === "ACTIVE" ? (
@@ -143,12 +174,12 @@ const SingleCarTable = () => {
       // width: "150px",
       ellipsis: true,
     },
+
     //Actions
     {
       title: "Action",
       className: "text-clip",
       dataIndex: "operation",
-      // width: "150px",
       ellipsis: true,
       key: "operation",
       render: (_, record) => {
@@ -156,37 +187,66 @@ const SingleCarTable = () => {
           <div className="d-flex userAction">
             {/* View */}
 
-            <a href='view'>
-            <Typography 
-              className="mar-right-8"
-              onClick={() => viewRow(record)}
-            >
-              <EyeOutlined style={{ fontSize: "20px", color: "white" }} />
-            </Typography>
+            <a href="view">
+              <Typography
+                className="mar-right-10"
+                onClick={() => viewRow(record)}
+              >
+                <EyeOutlined style={{ fontSize: "30px", color: "white" }} />
+              </Typography>
             </a>
             {/* Edit  */}
-            <a href='edit'>
-            <Typography to='edit'
-              className="mar-right-8"
-              style={{
-                borderColor: "white",
-              }}
-              onClick={() => editRow(record)}
-            >
-              <EditOutlined style={{ fontSize: "20px", color: "white" }} />
-            </Typography>
+            <a href="edit">
+              <Typography
+                to="edit"
+                className="mar-right-10"
+                style={{
+                  borderColor: "white",
+                }}
+                onClick={() => editRow(record)}
+              >
+                <EditOutlined style={{ fontSize: "30px", color: "white" }} />
+              </Typography>
             </a>
-
-            {/*   Delete  */}
-            <Typography.Link
-              className="mar-right-8"
-              onClick={showModal}
-
-              // onClick={() => deleteRow(record)}
-            >
-              <DeleteOutlined style={{ fontSize: "20px", color: "white" }} />
-            </Typography.Link>
           </div>
+        );
+      },
+    },
+
+    // Copy
+    {
+      title: "Copy",
+      className: "text-clip",
+      dataIndex: "copyId",
+      ellipsis: true,
+      key: "copyId",
+
+      render: (_, record) => {
+        return (
+          <Typography.Link
+          // onClick={() => handleCopy(record)}
+          >
+            {copied && record.copyIdSatus ? (
+              <Button
+                type="link"
+                onClick={() => handleCopyRecord(record)}
+                className=" d-flex flex-column gap-5 align-items-start  "
+              >
+                <CopyFilled style={{ fontSize: "25px", color: "white" }} />
+                {/* <span style={{ color: "red" }}>Copied.</span> */}
+              </Button>
+            ) : (
+              <CopyToClipboard
+                onCopy={onCopy}
+                options={{ message: "Whoa!" }}
+                text={record.copyId}
+              >
+                <Button type="link" onClick={() => handleUnCopyRecord(record)}>
+                  <CopyOutlined style={{ fontSize: "25px", color: "white" }} />
+                </Button>
+              </CopyToClipboard>
+            )}
+          </Typography.Link>
         );
       },
     },
@@ -199,7 +259,6 @@ const SingleCarTable = () => {
   return (
     <>
       <Table
-      
         columns={columns}
         dataSource={data}
         scroll={{ x: 980 }}
@@ -208,6 +267,10 @@ const SingleCarTable = () => {
           defaultCurrent: 1,
         }}
       />
+
+      <section className="section">
+        <textarea rows="3" style={{ marginTop: "1em", width: "100%" }} />
+      </section>
 
       {/* <CustomModal open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
         <p>Are you sure you want to delete?</p>

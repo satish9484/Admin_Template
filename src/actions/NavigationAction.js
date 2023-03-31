@@ -16,7 +16,7 @@ export const TOGGLE_MENU_ARROW = "navigationReducer/TOGGLE_MENU_ARROW";
 export const TOAST_MESSAGE_LOAD = "navigationReducer/TOAST_MESSAGE_LOAD";
 
 var toggle = false;
-var intervalId = "";
+// var intervalId = "";
 export const onPressDashbord = (index) => (dispatch) => {
   dispatch({
     type: ON_PRESS_DASHBORD,

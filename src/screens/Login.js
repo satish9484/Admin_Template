@@ -9,7 +9,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Logo from "../assets/images/logo-white.svg";
 
 import { userInfo } from "../redux/AuthSlice";
-import { Button } from "antd";
+// import { Button } from "antd";
 
 export const Login = () => {
   const dispatch = useDispatch();
@@ -119,6 +119,7 @@ export const Login = () => {
                     <a
                       className="btn btn-primary btn-lg btn-block"
                       href="mypage"
+                      // onClick={hadnleSubmit}
                     >
                       Login
                     </a>

@@ -189,7 +189,7 @@ class NavbarMenu extends React.Component {
             </div>
 
             <div className="navbar-brand">
-              <Link to="dashboard">
+              <Link to="/dashboard">
                 AUTO
                 {/* <img
                   src={
@@ -219,7 +219,7 @@ class NavbarMenu extends React.Component {
                 <ul className="nav navbar-nav">
                   <li>
                     <Link
-                      to="filedocuments"
+                      to="/filedocuments"
                       className="icon-menu d-none d-sm-block d-md-none d-lg-block"
                     >
                       <i className="fa fa-folder-open-o"></i>
@@ -227,19 +227,19 @@ class NavbarMenu extends React.Component {
                   </li>
                   <li>
                     <Link
-                      to="appcalendar"
+                      to="/appcalendar"
                       className="icon-menu d-none d-sm-block d-md-none d-lg-block"
                     >
                       <i className="icon-calendar"></i>
                     </Link>
                   </li>
                   <li>
-                    <Link to="appchat" className="icon-menu d-none d-sm-block">
+                    <Link to="/appchat" className="icon-menu d-none d-sm-block">
                       <i className="icon-bubbles"></i>
                     </Link>
                   </li>
                   <li>
-                    <Link to="appinbox" className="icon-menu d-none d-sm-block">
+                    <Link to="/appinbox" className="icon-menu d-none d-sm-block">
                       <i className="icon-envelope"></i>
                       <span className="notification-dot"></span>
                     </Link>
@@ -250,7 +250,7 @@ class NavbarMenu extends React.Component {
                     }
                   >
                     <Link
-                      to="#!"
+                      to="/#!"
                       className="dropdown-toggle icon-menu"
                       data-toggle="dropdown"
                       onClick={(e) => {
@@ -272,7 +272,7 @@ class NavbarMenu extends React.Component {
                         <strong>You have 4 new Notifications</strong>
                       </li>
                       <li>
-                        <Link to=" ">
+                        <Link to="/">
                           <div className="media">
                             <div className="media-left">
                               <i className="icon-info text-warning"></i>
@@ -288,7 +288,7 @@ class NavbarMenu extends React.Component {
                         </Link>
                       </li>
                       <li>
-                        <Link to=" ">
+                        <Link to="/ ">
                           <div className="media">
                             <div className="media-left">
                               <i className="icon-like text-success"></i>
@@ -304,7 +304,7 @@ class NavbarMenu extends React.Component {
                         </Link>
                       </li>
                       <li>
-                        <Link to=" ">
+                        <Link to="/ ">
                           <div className="media">
                             <div className="media-left">
                               <i className="icon-pie-chart text-info"></i>
@@ -320,7 +320,7 @@ class NavbarMenu extends React.Component {
                         </Link>
                       </li>
                       <li>
-                        <Link to=" ">
+                        <Link to="/ ">
                           <div className="media">
                             <div className="media-left">
                               <i className="icon-info text-danger"></i>
@@ -335,7 +335,7 @@ class NavbarMenu extends React.Component {
                         </Link>
                       </li>
                       <li className="footer">
-                        <Link to=" " className="more">
+                        <Link to="/ " className="more">
                           See all notifications
                         </Link>
                       </li>
@@ -345,7 +345,7 @@ class NavbarMenu extends React.Component {
                     className={toggleEqualizer ? "show dropdown" : "dropdown"}
                   >
                     <Link
-                      to="#!"
+                      to="/#!"
                       className="dropdown-toggle icon-menu"
                       data-toggle="dropdown"
                       onClick={(e) => {
@@ -375,37 +375,37 @@ class NavbarMenu extends React.Component {
                         </Link>
                       </li>
                       <li>
-                        <Link to=" ">
+                        <Link to="/ ">
                           <i className="icon-lock"></i> <span>Privacy</span>
                         </Link>
                       </li>
                       <li>
-                        <Link to=" ">
+                        <Link to="/ ">
                           <i className="icon-bell"></i>{" "}
                           <span>Notifications</span>
                         </Link>
                       </li>
                       <li className="menu-heading">BILLING</li>
                       <li>
-                        <Link to=" ">
+                        <Link to="/ ">
                           <i className="icon-credit-card"></i>{" "}
                           <span>Payments</span>
                         </Link>
                       </li>
                       <li>
-                        <Link to=" ">
+                        <Link to="/ ">
                           <i className="icon-printer"></i> <span>Invoices</span>
                         </Link>
                       </li>
                       <li>
-                        <Link to=" ">
+                        <Link to="/ ">
                           <i className="icon-refresh"></i> <span>Renewals</span>
                         </Link>
                       </li>
                     </ul>
                   </li>
                   <li>
-                    <Link to="login" className="icon-menu">
+                    <Link to="/login" className="icon-menu">
                       <i className="icon-login"></i>
                     </Link>
                   </li>
@@ -471,7 +471,7 @@ class NavbarMenu extends React.Component {
             </div>
             <ul className="nav nav-tabs">
               <li className="nav-item">
-              <Link
+              <Link to="/"
                   className={sideMenuTab[0] ? "nav-link active" : "nav-link"}
                   data-toggle="tab"
                   onClick={() => {
@@ -482,7 +482,7 @@ class NavbarMenu extends React.Component {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link
+                <Link to="/"
                   className={sideMenuTab[1] ? "nav-link active" : "nav-link"}
                   data-toggle="tab"
                   onClick={() => {
@@ -493,7 +493,7 @@ class NavbarMenu extends React.Component {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link
+                <Link to="/"
                   className={sideMenuTab[2] ? "nav-link active" : "nav-link"}
                   data-toggle="tab"
                   onClick={() => {
@@ -504,7 +504,7 @@ class NavbarMenu extends React.Component {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link
+                <Link to="/"
                   className={sideMenuTab[3] ? "nav-link active" : "nav-link"}
                   data-toggle="tab"
                   onClick={() => {
@@ -537,17 +537,17 @@ class NavbarMenu extends React.Component {
                         <li
                           className={activeKey === "dashboard" ? "active" : ""}
                         >
-                          <Link to="dashboard">Analytical</Link>
+                          <Link to="/dashboard">Analytical</Link>
                         </li>
                         <li
                           className={
                             activeKey === "demographic" ? "active" : ""
                           }
                         >
-                          <Link to="demographic">Demographic</Link>
+                          <Link to="/demographic">Demographic</Link>
                         </li>
                         <li className={activeKey === "ioT" ? "active" : ""}>
-                          <Link to="ioT">IoT</Link>
+                          <Link to="/ioT">IoT</Link>
                         </li>
                       </ul>
                     </li>
@@ -567,13 +567,13 @@ class NavbarMenu extends React.Component {
                           className={activeKey === "appinbox" ? "active" : ""}
                           onClick={() => {}}
                         >
-                          <Link to="appinbox">Inbox</Link>
+                          <Link to="/appinbox">Inbox</Link>
                         </li>
                         <li
                           className={activeKey === "appchat" ? "active" : ""}
                           onClick={() => {}}
                         >
-                          <Link to="appchat">Chat</Link>
+                          <Link to="/appchat">Chat</Link>
                         </li>
                         <li
                           className={
@@ -581,19 +581,19 @@ class NavbarMenu extends React.Component {
                           }
                           onClick={() => {}}
                         >
-                          <Link to="appcalendar">Calendar</Link>
+                          <Link to="/appcalendar">Calendar</Link>
                         </li>
                         <li
                           className={activeKey === "appcontact" ? "active" : ""}
                           onClick={() => {}}
                         >
-                          <Link to="appcontact">Contact Card</Link>
+                          <Link to="/appcontact">Contact Card</Link>
                         </li>
                         <li
                           className={activeKey === "apptaskbar" ? "active" : ""}
                           onClick={() => {}}
                         >
-                          <Link to="apptaskbar">Taskboard</Link>
+                          <Link to="/apptaskbar">Taskboard</Link>
                         </li>
                       </ul>
                     </li>
@@ -616,7 +616,7 @@ class NavbarMenu extends React.Component {
                           }
                           onClick={() => {}}
                         >
-                          <Link to="filemanagerdashboard">Dashboard</Link>
+                          <Link to="/filemanagerdashboard">Dashboard</Link>
                         </li>
                         <li
                           className={
@@ -624,19 +624,19 @@ class NavbarMenu extends React.Component {
                           }
                           onClick={() => {}}
                         >
-                          <Link to="filedocuments">Documents</Link>
+                          <Link to="/filedocuments">Documents</Link>
                         </li>
                         <li
                           className={activeKey === "filemedia" ? "active" : ""}
                           onClick={() => {}}
                         >
-                          <Link to="filemedia">Media</Link>
+                          <Link to="/filemedia">Media</Link>
                         </li>
                         <li
                           className={activeKey === "fileimages" ? "active" : ""}
                           onClick={() => {}}
                         >
-                          <Link to="fileimages">Images</Link>
+                          <Link to="/fileimages">Images</Link>
                         </li>
                       </ul>
                     </li>
@@ -657,13 +657,13 @@ class NavbarMenu extends React.Component {
                             activeKey === "blognewpost" ? "active" : ""
                           }
                         >
-                          <Link to="blognewpost">New Post</Link>
+                          <Link to="/blognewpost">New Post</Link>
                         </li>
                         <li
                           className={activeKey === "bloglist" ? "active" : ""}
                           onClick={() => {}}
                         >
-                          <Link to="bloglist">Blog List</Link>
+                          <Link to="/bloglist">Blog List</Link>
                         </li>
                         <li
                           className={
@@ -671,7 +671,7 @@ class NavbarMenu extends React.Component {
                           }
                           onClick={() => {}}
                         >
-                          <Link to="blogdetails">Blog Detail</Link>
+                          <Link to="/blogdetails">Blog Detail</Link>
                         </li>
                       </ul>
                     </li>
@@ -694,19 +694,19 @@ class NavbarMenu extends React.Component {
                           }
                           onClick={() => {}}
                         >
-                          <Link to="uitypography">Typography</Link>
+                          <Link to="/uitypography">Typography</Link>
                         </li>
                         <li
                           className={activeKey === "uitabs" ? "active" : ""}
                           onClick={() => {}}
                         >
-                          <Link to="uitabs">Tabs</Link>
+                          <Link to="/uitabs">Tabs</Link>
                         </li>
                         <li
                           className={activeKey === "uibuttons" ? "active" : ""}
                           onClick={() => {}}
                         >
-                          <Link to="uibuttons">Buttons</Link>
+                          <Link to="/uibuttons">Buttons</Link>
                         </li>
                         <li
                           className={
@@ -714,13 +714,13 @@ class NavbarMenu extends React.Component {
                           }
                           onClick={() => {}}
                         >
-                          <Link to="bootstrapui">Bootstrap UI</Link>
+                          <Link to="/bootstrapui">Bootstrap UI</Link>
                         </li>
                         <li
                           className={activeKey === "uiicons" ? "active" : ""}
                           onClick={() => {}}
                         >
-                          <Link to="uiicons">Icons</Link>
+                          <Link to="/uiicons">Icons</Link>
                         </li>
                         <li
                           className={
@@ -728,13 +728,13 @@ class NavbarMenu extends React.Component {
                           }
                           onClick={() => {}}
                         >
-                          <Link to="uinotifications">Notifications</Link>
+                          <Link to="/uinotifications">Notifications</Link>
                         </li>
                         <li
                           className={activeKey === "uicolors" ? "active" : ""}
                           onClick={() => {}}
                         >
-                          <Link to="uicolors">Colors</Link>
+                          <Link to="/uicolors">Colors</Link>
                         </li>
 
                         <li
@@ -743,7 +743,7 @@ class NavbarMenu extends React.Component {
                           }
                           onClick={() => {}}
                         >
-                          <Link to="uilistgroup">List Group</Link>
+                          <Link to="/uilistgroup">List Group</Link>
                         </li>
                         <li
                           className={
@@ -751,13 +751,13 @@ class NavbarMenu extends React.Component {
                           }
                           onClick={() => {}}
                         >
-                          <Link to="uimediaobject">Media Object</Link>
+                          <Link to="/uimediaobject">Media Object</Link>
                         </li>
                         <li
                           className={activeKey === "uimodal" ? "active" : ""}
                           onClick={() => {}}
                         >
-                          <Link to="uimodal">Modals</Link>
+                          <Link to="/uimodal">Modals</Link>
                         </li>
                         <li
                           className={
@@ -765,7 +765,7 @@ class NavbarMenu extends React.Component {
                           }
                           onClick={() => {}}
                         >
-                          <Link to="uiprogressbar">Progress Bars</Link>
+                          <Link to="/uiprogressbar">Progress Bars</Link>
                         </li>
                       </ul>
                     </li>
@@ -787,7 +787,7 @@ class NavbarMenu extends React.Component {
                           }
                           onClick={() => {}}
                         >
-                          <Link to="widgetsdata">Data</Link>
+                          <Link to="/widgetsdata">Data</Link>
                         </li>
 
                         <li
@@ -796,7 +796,7 @@ class NavbarMenu extends React.Component {
                           }
                           onClick={() => {}}
                         >
-                          <Link to="widgetsweather">Weather</Link>
+                          <Link to="/widgetsweather">Weather</Link>
                         </li>
 
                         <li
@@ -805,7 +805,7 @@ class NavbarMenu extends React.Component {
                           }
                           onClick={() => {}}
                         >
-                          <Link to="widgetsblog">Blog</Link>
+                          <Link to="/widgetsblog">Blog</Link>
                         </li>
                         <li
                           className={
@@ -813,7 +813,7 @@ class NavbarMenu extends React.Component {
                           }
                           onClick={() => {}}
                         >
-                          <Link to="widgetsecommers">eCommerce</Link>
+                          <Link to="/widgetsecommers">eCommerce</Link>
                         </li>
                       </ul>
                     </li>
@@ -839,42 +839,42 @@ class NavbarMenu extends React.Component {
                         <li
                           className={addClassactiveChildAuth[0] ? "active" : ""}
                         >
-                          <Link to="login">Login</Link>
+                          <Link to="/login">Login</Link>
                         </li>
                         <li
                           className={addClassactiveChildAuth[1] ? "active" : ""}
                         >
-                          <Link to="registration">Register</Link>
+                          <Link to="/registration">Register</Link>
                         </li>
                         <li
                           className={addClassactiveChildAuth[2] ? "active" : ""}
                         >
-                          <Link to="lockscreen">Lockscreen</Link>
+                          <Link to="/lockscreen">Lockscreen</Link>
                         </li>
                         <li
                           className={addClassactiveChildAuth[3] ? "active" : ""}
                         >
-                          <Link to="forgotpassword">Forgot Password</Link>
+                          <Link to="/forgotpassword">Forgot Password</Link>
                         </li>
                         <li
                           className={addClassactiveChildAuth[4] ? "active" : ""}
                         >
-                          <Link to="page404">Page 404</Link>
+                          <Link to="/page404">Page 404</Link>
                         </li>
                         <li
                           className={addClassactiveChildAuth[5] ? "active" : ""}
                         >
-                          <Link to="page403">Page 403</Link>
+                          <Link to="/page403">Page 403</Link>
                         </li>
                         <li
                           className={addClassactiveChildAuth[6] ? "active" : ""}
                         >
-                          <Link to="page500">Page 500</Link>
+                          <Link to="/page500">Page 500</Link>
                         </li>
                         <li
                           className={addClassactiveChildAuth[7] ? "active" : ""}
                         >
-                          <Link to="page503">Page 503</Link>
+                          <Link to="/page503">Page 503</Link>
                         </li>
                       </ul>
                     </li>
@@ -894,7 +894,7 @@ class NavbarMenu extends React.Component {
                           className={activeKey === "blankpage" ? "active" : ""}
                           onClick={() => {}}
                         >
-                          <Link to="blankpage">Blank Page</Link>{" "}
+                          <Link to="/blankpage">Blank Page</Link>{" "}
                         </li>
                         <li
                           className={
@@ -902,7 +902,7 @@ class NavbarMenu extends React.Component {
                           }
                           onClick={() => {}}
                         >
-                          <Link to="profilev1page">
+                          <Link to="/profilev1page">
                             Profile{" "}
                             <span className="badge badge-default float-right">
                               v1
@@ -915,7 +915,7 @@ class NavbarMenu extends React.Component {
                           }
                           onClick={() => {}}
                         >
-                          <Link to="profilev2page">
+                          <Link to="/profilev2page">
                             Profile{" "}
                             <span className="badge badge-warning float-right">
                               v2
@@ -928,27 +928,27 @@ class NavbarMenu extends React.Component {
                           }
                           onClick={() => {}}
                         >
-                          <Link to="imagegalleryprofile">Image Gallery </Link>{" "}
+                          <Link to="/imagegalleryprofile">Image Gallery </Link>{" "}
                         </li>
 
                         <li
                           className={activeKey === "timeline" ? "active" : ""}
                           onClick={() => {}}
                         >
-                          <Link to="timeline">Timeline</Link>
+                          <Link to="/timeline">Timeline</Link>
                         </li>
 
                         <li
                           className={activeKey === "pricing" ? "active" : ""}
                           onClick={() => {}}
                         >
-                          <Link to="pricing">Pricing</Link>
+                          <Link to="/pricing">Pricing</Link>
                         </li>
                         <li
                           className={activeKey === "invoices" ? "active" : ""}
                           onClick={() => {}}
                         >
-                          <Link to="invoices">
+                          <Link to="/invoices">
                             Invoices
                             <span className="badge badge-default float-right">
                               v1
@@ -959,7 +959,7 @@ class NavbarMenu extends React.Component {
                           className={activeKey === "invoicesv2" ? "active" : ""}
                           onClick={() => {}}
                         >
-                          <Link to="invoicesv2">
+                          <Link to="/invoicesv2">
                             Invoices{" "}
                             <span className="badge badge-warning float-right">
                               v2
@@ -972,7 +972,7 @@ class NavbarMenu extends React.Component {
                           }
                           onClick={() => {}}
                         >
-                          <Link to="searchresult">Search Results</Link>
+                          <Link to="/searchresult">Search Results</Link>
                         </li>
                         <li
                           className={
@@ -980,13 +980,13 @@ class NavbarMenu extends React.Component {
                           }
                           onClick={() => {}}
                         >
-                          <Link to="helperclass">Helper Classes</Link>
+                          <Link to="/helperclass">Helper Classes</Link>
                         </li>
                         <li
                           className={activeKey === "teamsboard" ? "active" : ""}
                           onClick={() => {}}
                         >
-                          <Link to="teamsboard">Teams Board</Link>
+                          <Link to="/teamsboard">Teams Board</Link>
                         </li>
                         <li
                           className={
@@ -994,7 +994,7 @@ class NavbarMenu extends React.Component {
                           }
                           onClick={() => {}}
                         >
-                          <Link to="projectslist">Projects List</Link>
+                          <Link to="/projectslist">Projects List</Link>
                         </li>
                         <li
                           className={
@@ -1002,7 +1002,7 @@ class NavbarMenu extends React.Component {
                           }
                           onClick={() => {}}
                         >
-                          <Link to="maintanance">Maintenance</Link>
+                          <Link to="/maintanance">Maintenance</Link>
                         </li>
                         <li
                           className={
@@ -1010,13 +1010,13 @@ class NavbarMenu extends React.Component {
                           }
                           onClick={() => {}}
                         >
-                          <Link to="testimonials">Testimonials</Link>
+                          <Link to="/testimonials">Testimonials</Link>
                         </li>
                         <li
                           className={activeKey === "faqs" ? "active" : ""}
                           onClick={() => {}}
                         >
-                          <Link to="faqs">FAQ</Link>
+                          <Link to="/faqs">FAQ</Link>
                         </li>
                       </ul>
                     </li>
@@ -1038,7 +1038,7 @@ class NavbarMenu extends React.Component {
                           }
                           onClick={() => {}}
                         >
-                          <Link to="formvalidation">Form Validation</Link>
+                          <Link to="/formvalidation">Form Validation</Link>
                         </li>
                         <li
                           className={
@@ -1046,7 +1046,7 @@ class NavbarMenu extends React.Component {
                           }
                           onClick={() => {}}
                         >
-                          <Link to="basicelements">Basic Elements</Link>
+                          <Link to="/basicelements">Basic Elements</Link>
                         </li>
                       </ul>
                     </li>
@@ -1068,7 +1068,7 @@ class NavbarMenu extends React.Component {
                           }
                           onClick={() => {}}
                         >
-                          <Link to="tablenormal">Normal Tables</Link>{" "}
+                          <Link to="/tablenormal">Normal Tables</Link>{" "}
                         </li>
                       </ul>
                     </li>
@@ -1088,7 +1088,7 @@ class NavbarMenu extends React.Component {
                           className={activeKey === "echart" ? "active" : ""}
                           onClick={() => {}}
                         >
-                          <Link to="echart">E-chart</Link>{" "}
+                          <Link to="/echart">E-chart</Link>{" "}
                         </li>
                       </ul>
                     </li>
@@ -1113,7 +1113,7 @@ class NavbarMenu extends React.Component {
                           }
                           onClick={() => {}}
                         >
-                          <Link to="leafletmap">Leaflet Map</Link>
+                          <Link to="/leafletmap">Leaflet Map</Link>
                         </li>
                       </ul>
                     </li>
@@ -1144,7 +1144,7 @@ class NavbarMenu extends React.Component {
                 </form>
                 <ul className="right_chat list-unstyled">
                   <li className="online">
-                    <Link to=" ">
+                    <Link to="/ ">
                       <div className="media">
                         <img className="media-object " src={Avatar4} alt="" />
                         <div className="media-body">
@@ -1156,7 +1156,7 @@ class NavbarMenu extends React.Component {
                     </Link>
                   </li>
                   <li className="online">
-                    <Link to=" ">
+                    <Link to="/ ">
                       <div className="media">
                         <img className="media-object " src={Avatar5} alt="" />
                         <div className="media-body">
@@ -1168,7 +1168,7 @@ class NavbarMenu extends React.Component {
                     </Link>
                   </li>
                   <li className="offline">
-                    <Link to=" ">
+                    <Link to="/ ">
                       <div className="media">
                         <img className="media-object " src={Avatar2} alt="" />
                         <div className="media-body">
@@ -1180,7 +1180,7 @@ class NavbarMenu extends React.Component {
                     </Link>
                   </li>
                   <li className="offline">
-                    <Link to=" ">
+                    <Link to="/ ">
                       <div className="media">
                         <img className="media-object " src={Avatar1} alt="" />
                         <div className="media-body">
@@ -1194,7 +1194,7 @@ class NavbarMenu extends React.Component {
                     </Link>
                   </li>
                   <li className="online">
-                    <Link to=" ">
+                    <Link to="/ ">
                       <div className="media">
                         <img className="media-object " src={Avatar3} alt="" />
                         <div className="media-body">
@@ -1374,7 +1374,7 @@ class NavbarMenu extends React.Component {
                   <li className="menu-heading">HOW-TO</li>
                   <li>
                     <Link
-                      to="#!"
+                      to="/#!"
                       onClick={(e) => {
                         e.preventDefault();
                       }}
@@ -1384,7 +1384,7 @@ class NavbarMenu extends React.Component {
                   </li>
                   <li>
                     <Link
-                      to="#!"
+                      to="/#!"
                       onClick={(e) => {
                         e.preventDefault();
                       }}
@@ -1394,7 +1394,7 @@ class NavbarMenu extends React.Component {
                   </li>
                   <li>
                     <Link
-                      to="#!"
+                      to="/#!"
                       onClick={(e) => {
                         e.preventDefault();
                       }}
@@ -1405,7 +1405,7 @@ class NavbarMenu extends React.Component {
                   <li className="menu-heading">ACCOUNT</li>
                   <li>
                     <Link
-                      to="registration"
+                      to="/registration"
                       onClick={(e) => {
                         e.preventDefault();
                       }}
@@ -1415,7 +1415,7 @@ class NavbarMenu extends React.Component {
                   </li>
                   <li>
                     <Link
-                      to="forgotpassword"
+                      to="/forgotpassword"
                       onClick={(e) => {
                         e.preventDefault();
                       }}
@@ -1425,7 +1425,7 @@ class NavbarMenu extends React.Component {
                   </li>
                   <li>
                     <Link
-                      to="#!"
+                      to="/#!"
                       onClick={(e) => {
                         e.preventDefault();
                       }}
@@ -1436,7 +1436,7 @@ class NavbarMenu extends React.Component {
                   <li className="menu-heading">BILLING</li>
                   <li>
                     <Link
-                      to="#!"
+                      to="/#!"
                       onClick={(e) => {
                         e.preventDefault();
                       }}
@@ -1446,7 +1446,7 @@ class NavbarMenu extends React.Component {
                   </li>
                   <li>
                     <Link
-                      to="#!"
+                      to="/#!"
                       onClick={(e) => {
                         e.preventDefault();
                       }}
@@ -1456,7 +1456,7 @@ class NavbarMenu extends React.Component {
                   </li>
                   <li className="menu-button m-t-30">
                     <Link
-                      to="#!"
+                      to="/#!"
                       className="btn btn-primary"
                       onClick={(e) => {
                         e.preventDefault();

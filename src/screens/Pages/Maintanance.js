@@ -25,7 +25,7 @@ class Maintanance extends React.Component {
                 </div>
               </article>
               <div className="margin-top-30">
-                <a
+                <a href=" "
                   className="btn btn-default"
                   onClick={() => {
                     this.props.history.push("projectslist");
@@ -34,7 +34,7 @@ class Maintanance extends React.Component {
                   <i className="fa fa-arrow-left"></i>&nbsp;<span>Go Back</span>
                 </a>
                 &nbsp;
-                <a href=" " className="btn btn-info" href="dashboard">
+                <a  className="btn btn-info" href="dashboard">
                   <i className="fa fa-home"></i>&nbsp;<span>Home</span>
                 </a>
               </div>

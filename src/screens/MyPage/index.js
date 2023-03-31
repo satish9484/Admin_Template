@@ -3,7 +3,7 @@ import React from "react";
 import LogoiCON from "../../assets/images/logo-icon.svg";
 import PageHeader from "../../components/PageHeader";
 
-import UsedCar from "./CarManagement/UsedCar/index";
+import SingleCar from "./CarManagement/singleCar/index";
 
 const index = (props) => {
   const { loadingPage } = props;
@@ -27,10 +27,16 @@ const index = (props) => {
           <div>
             <div className="container-fluid">
               <PageHeader
-                HeaderText="Dashboard"
-                Breadcrumb={[{ name: "MyPage" }]}
+                HeaderText="My Page"
+                Breadcrumb={[{ navigate: "mypage", name: "My Page" }]}
               />
-              <UsedCar />
+              <div className="row clearfix">
+                <div className="col-md-12 ">
+                  {/* <div className="card"> */}
+                  <SingleCar />
+                  {/* </div> */}
+                </div>
+              </div>
             </div>
           </div>
         </div>

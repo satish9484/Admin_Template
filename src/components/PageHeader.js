@@ -4,6 +4,7 @@ import {
   visitorsSparcalOption,
   visitsSparcalOption,
 } from "../Data/DashbordData";
+import { Link } from "react-router-dom";
 
 class PageHeader extends React.Component {
   constructor(props) {
@@ -77,14 +78,18 @@ class PageHeader extends React.Component {
                 </a>
               </li>
               {Breadcrumb.map((item, index) => {
-                return (
+                return index + 1 === Breadcrumb.length ? (
+                  <li key={item.name + index} className="breadcrumb-item flex-grow-1">
+                    <p>{item.name}</p>
+                  </li>
+                ) : (
                   <li
                     key={item.name + index}
                     className="breadcrumb-item active"
                   >
-                    <a href={item.navigate ? item.navigate : null}>
+                    <Link to={item.navigate ? item.navigate : null}>
                       {item.name}
-                    </a>
+                    </Link>
                   </li>
                 );
               })}

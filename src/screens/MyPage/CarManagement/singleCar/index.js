@@ -1,18 +1,15 @@
 import React from "react";
 import SingleCarTable from "./SingleCarTable";
-
-import "../../CarManagement.scss";
-import {  Col, Input, Row } from "antd";
+import "../CarManagement.scss";
+import { Col, Input, Row } from "antd";
 const { Search } = Input;
-
-
 
 const SingleCar = () => {
   const onSearch = (value) => console.log(value);
 
   return (
     <>
-      <Row className="search-filter-container mar-bottom-8">
+      <Row className="search-filter-container mr-b-5  mr-y-10">
         <Col
           xs={{ span: 24, offset: 0 }}
           sm={{ span: 18, offset: 6 }}

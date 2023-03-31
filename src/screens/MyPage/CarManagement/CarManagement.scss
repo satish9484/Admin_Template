@@ -3,6 +3,7 @@
 @import "../../../assets/assets/scss/myscss/flex";
 
 /*============================================= Tab =============================================== */
+
 :where(.css-dev-only-do-not-override-mxhywb).ant-tabs {
   width: 100%;
 }
@@ -15,38 +16,38 @@
 
 /*============================================= pagination =============================================== */
 
-:where(.css-dev-only-do-not-override-mxhywb).ant-pagination {
+.ant-pagination {
   box-sizing: border-box;
-  background-color: #30303a;
+  margin: 16px 0;
+  background-color: $theme-dark;
   .ant-pagination-item {
-    background-color: white;
+    background-color: white !important;
 
     a:hover {
       border-radius: 6px;
       background-color: #686885;
     }
   }
-
   .ant-pagination-prev,
   .ant-pagination-next {
-    background-color: white;
+    background-color: white !important;
 
     .ant-pagination-item-link {
       display: flex;
       align-items: center;
-      background-color: white;
+      background-color: white !important;
       justify-content: center;
     }
   }
-
   .ant-pagination-item-active {
     color: whitesmoke;
     border-color: black;
-    background-color: #686885;
+    background-color: #7676b1 !important;
   }
 }
 
 /*============================================= Filter =============================================== */
+
 .ant-checkbox-wrapper {
   width: fit-content;
 }
@@ -111,13 +112,12 @@
   }
 }
 
-/*============================================= Table  Column =============================================== */
+/*============================================= Table =============================================== */
 
-// --------------------------- For Table Cell   -----------------------------------
-
-:where(.css-dev-only-do-not-override-mxhywb).ant-table-wrapper {
+.ant-table-wrapper {
+  margin-left: 15px;
+  margin-right: 10px;
   table {
-    //  table head
     background-color: #30303a;
     color: whitesmoke;
     .ant-table-thead {
@@ -141,8 +141,32 @@
       tr {
         .ant-table-cell {
           padding: 4px 16px !important;
+          background-color: #523a3a;
+          button {
+            &:hover {
+              // padding: 5px !important;
+              background-color: rgba(0, 0, 0, 0.25);
+              box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px,
+                rgb(51, 51, 51) 0px 0px 0px 3px !important;
+            }
+            div {
+              padding: 0 !important;
+            }
+          }
           > &:hover {
-            background-color: #523a3a;
+            background-color: #3520d8;
+          }
+        }
+
+        :nth-child(10) {
+          padding: 0 !important;
+          article {
+            &:hover {
+              svg {
+                border-radius: 25%;
+                color: rgba(96, 103, 177, 0.509);
+              }
+            }
           }
         }
       }
@@ -153,9 +177,22 @@
   }
 }
 
-// --------------------------- Status   -----------------------------------
+.mar-right-8 {
+  margin-right: 8px;
+}
+
+.mr-b-5 {
+  margin-bottom: 8px;
+}
+
+.gap-5 {
+  gap: 5px;
+}
+
+/* --------------------------- Status   -----------------------------------  */
+
 .status-active {
-   border: 1px solid green;
+  border: 1px solid green;
   color: green;
 }
 
@@ -171,17 +208,30 @@
 
 .status {
   text-align: center;
-  min-width: 82px;
+  min-width: 92px;
   padding: 5px 10px;
   border-radius: 5px;
 }
 
 /*============================================= Table View Row Data =============================================== */
 
+.ant-btn.ant-btn-default,
+.ant-btn.ant-btn-primary {
+  width: 150px;
+  height: 45px;
+}
+
+.ant-btn.ant-btn-lg.ant-btn-icon-only.ant-input-search-button {
+  width: 40px;
+  height: 40px;
+  box-shadow: rgba(177, 34, 34, 0.24) 0px 3px 8px;
+}
+
 .viewRowDataLayout {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  gap: 20px;
+  padding: 20px;
 
   .field {
     display: flex;
@@ -197,16 +247,18 @@
       padding-left: 4px;
       text-transform: capitalize;
       color: whitesmoke;
+      margin: 0;
     }
 
     .filed-content {
       display: inline-block;
       width: 100%;
       min-height: 45px;
-      color: black;
+      color: #c5a5a5;
       border: 1px solid $placeholder-color;
       border-radius: 10px;
       padding: 8px 20px;
+      margin: 0;
     }
   }
   .col-span {
@@ -221,28 +273,50 @@
   }
 }
 
-/*============================================= Control Edit Filed =============================================== */
+/* ============================================= Control Edit Filed ===============================================  */
 
 .ant-form {
   display: inline-block;
   width: 100%;
-  // .row {
-  //   .ant-input {
-  //     // @include prefix(box-shadow, 0px 4px 12px rgba(18, 42, 70, 0.31));
-  //     // height: 20px !important;
-  //   }
-  // }
 
-  [class^="col-"] {
-    padding-right: 10px;
-    padding-left: 5px;
-  }
+  .row {
+    margin: 0;
 
-  .ant-form-item {
-    margin-bottom: 5px;
+    [class^="col-"] {
+      padding-right: 10px;
+      padding-left: 5px;
+    }
+
+    .ant-form-item {
+      margin-bottom: 5px;
+    }
+
+    .mar-top-8 {
+      margin-top: 16px;
+    }
   }
 }
 
-.anticon {
-  color: black !important;
+.pageLabel {
+  padding: 20px;
+  position: relative;
+  box-shadow: none;
+}
+
+@include responsive(xs) {
+  .viewRowDataLayout {
+    display: flex;
+    flex-direction: column;
+  }
+
+  // :where(.css-dev-only-do-not-override-mxhywb)
+  .ant-form .row {
+    gap: 10px;
+    .ant-form-item {
+      .ant-form-item-label,
+      .ant-form-item-control {
+        flex: 0 0 50%;
+      }
+    }
+  }
 }
